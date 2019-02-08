@@ -1,9 +1,8 @@
 ﻿/*!
 app.js
-(c) 2017 IG PROG, www.igprog.hr
+(c) 2019 IG PROG, www.igprog.hr
 */
 angular.module('app', [])
-
 
 .controller('appCtrl', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
 
@@ -14,14 +13,12 @@ angular.module('app', [])
           });
     };
     getConfig();
-
     $scope.today = new Date;
-   
 }])
 
 .controller('contactCtrl', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
     $scope.showAlert = false;
-    $scope.sendicon = 'fa fa-paper-plane-o';
+    $scope.sendicon = 'far fa-envelope';
     $scope.sendicontitle = 'Pošalji';
 
     $scope.d = {
@@ -31,7 +28,6 @@ angular.module('app', [])
     }
 
     $scope.send = function (d) {
-        if ($rootScope.config.backend == undefined) { $rootScope.getConfig(); }
         $scope.isSendButtonDisabled = true;
         $scope.sendicon = 'fa fa-spinner fa-spin';
         $scope.sendicontitle = 'Šaljem';
@@ -42,13 +38,13 @@ angular.module('app', [])
         })
        .then(function (response) {
            $scope.showAlert = true;
-           $scope.sendicon = 'fa fa-paper-plane-o';
+           $scope.sendicon = 'far fa-envelope';
            $scope.sendicontitle = 'Pošalji';
            window.location.hash = 'contact';
        },
        function (response) {
            $scope.showAlert = false;
-           $scope.sendicon = 'fa fa-paper-plane-o';
+           $scope.sendicon = 'far fa-envelope';
            $scope.sendicontitle = 'Pošalji';
            alert(response.data.d);
        });

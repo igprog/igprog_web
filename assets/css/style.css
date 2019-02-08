@@ -81,7 +81,7 @@ body {
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #337ab7;
+      background-color: #c9d5e0;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -91,7 +91,7 @@ body {
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      color: black !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
@@ -235,6 +235,24 @@ body {
 
 .portfolio {
     height: 450px;
+}
+
+.bg-primary {
+    background-color: #4b6ca0 !important;
+}
+
+header {
+  padding: 104px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 106px 0 100px;
+  }
+}
+
+section {
+  padding: 50px 0;
 }
 
 

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47317436-1"></script>
@@ -10,265 +10,202 @@
 
         gtag('config', 'UA-47317436-1');
     </script>-->
-
-    <title>IG PROG - Obrt za računalno programiranje</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Izrada web aplikacija i računalnih programa. Izrada specijeliziranih programskih rješenja za vašu tvrtku. Izrada web stranica i web shopova.">
-    <meta name="author" content="IG PROG, obrt za računalno programiranje">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <meta name="author" content="IG PROG, vl. Igor Gašparović">
+    <title>IG PROG | Programska rješenja | Web aplikacije</title>
+    <link href="../assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/vendor/angular.min.js"></script>
     <script src="assets/js/vendor/angular-animate.min.js"></script>
     <script src="assets/js/vendor/angular-aria.min.js"></script>
-    <script src="assets/js/vendor/angular-messages.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
-    <style>
-        body {
-            font-family: 'Encode Sans Expanded';
-            font-size: 16px;
-        }
-    </style>
-
 </head>
-<body id="home" ng-app="app" ng-controller="appCtrl" data-spy="scroll" data-target=".navbar" data-offset="60" ng-cloak>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html" style="padding-top:7px !important"><img src="assets/img/logo.png" style="height:35px"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#services"><i class="fa fa-info"></i> Usluge</a></li>
-                    <li><a href="#technology"><i class="fa fa-desktop"></i> Tehnologije</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Kontakt</a></li>
-                </ul>
-            </div>
+  <body id="page-top" ng-app="app" ng-controller="appCtrl">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <img src="../assets/img/logo.png" style="height:30px" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#services">Usluge</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#framework">Tehnologije</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">O nama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div class="jumbotron text-center" style="padding-top:250px">
-        <h1 style="color:white !important; text-shadow: 2px 2px darkgray;" class="text-capitalize">izrada web aplikacija</h1>
-        <h2 style="color:white !important" class="text-lowercase"><em>brzo | povoljno | profesionalno</em></h2>
-        <div>
-            <a href="#services" class="btn btn-primary m10"><strong style="font-size:xx-large"> Saznaj više</strong></a>
-        </div>
-    </div>
 
-    <div id="services" class="container pt">
-        <div class="row">
-            <div class="col-sm-5">
-                <h3>Usluge</h3>
-                <hr />
-                   <h2>Izrada web aplikacija, web shopova, internet stranica i računalnih programa</h2>
-                <p>
-                    Nudimo kompletna programska rješenja prema Vašim specifičnim potrebama, od dizajna do smještaja aplikacije na server.
-                    <a href="#contact"> Pošaljite upit...</a>
-                </p>
-            </div>
-            <div class="col-sm-7">
-                <img src="assets/img/responsive.png" class="img-responsive" style="height:180px" />
-            </div>
-            
-        </div>
-    </div>
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <img src="assets/img/icons/monitor.png" />
+        <h1>Programska rješenja po Vašoj mjeri</h1>
+        <p class="lead">Pretvorite svoju ideju u Web, Desktop ili Android aplikaciju</p>
+      </div>
+    </header>
 
-    <div id="technology" class="container pt">
-        <h3>Tehnologije</h3>
-        <p class="text-justify">
-            Za izradu web aplikacija koristimo najnovije tehnologije. Dizajn je moderan i responzivan (izgled stranice se automatski prilagođava veličini svakog zaslona - laptop, tablet, mobitel...).
-            Aplikacija je smještena na serveru što znači da aplikaciji možete pristupiti sa bilo kojeg uređaja neovisno o operativnom sustavu.
-        </p>
-        <em>Popis tehnologija (framework-a) koje najčešće koristimo:</em>
-        <hr />
+    <section id="services" class="bg-light">
+      <div class="container">
         <div class="row">
-            <div class="col-xs-2">
-                <img src="assets/img/framework/angularjs.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/csharp.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/html5.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/javascript.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/jquery.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/bootstrap.png" class="img-responsive" />
+          <div class="col-lg-8 mx-auto">
+            <p class="lead"><strong>IG PROG</strong> <em>obrt za računalno progrmairanje</em> nudi kompletna programska rješenja prema Vašim specifičnim potrebama, od dizajna do smještaja aplikacije na server.</p>
+              <h2>Usluge:</h2>
+              <h2 style="font-size:16px"><img src="assets/img/icons/web.png" /> Izrada web aplikacija</h2>
+              <h2 style="font-size:16px"><img src="assets/img/icons/desktop.png" /> Izrada računalnih programa</h2>
+              <h2 style="font-size:16px"><img src="assets/img/icons/android.png" /> Izrada mobilnih aplikacija</h2>
+          </div>
+            <div class="col-lg-4">
+                <img src="../assets/img/mockup.png" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-2">
-                <img src="assets/img/framework/css3.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/angularmaterial.jpg" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/mssql.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/sqlite.jpg" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/aspnet.jpg" class="img-responsive" />
-            </div>
-            <div class="col-xs-2">
-                <img src="assets/img/framework/visualbasic.jpg" class="img-responsive" />
-            </div>
-        </div>
-    </div>
+      </div>
+    </section>
 
-    <div id="portfolio" class="container pt">
-        <h3>Izdvojeni radovi</h3>
-        <hr />
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="well portfolio">
-                    <h2 style="font-size:14px" class="text-center">Program Prehrane Web</h2>
-                    <img src="assets/img/program_prehrane_web.png" class="img-thumbnail" />
-                    <em>web aplikacija za izradu uravnoteženih jelovnika i plana tjelesne aktivnosti</em>
-                    <a href="https://www.programprehrane.com">www.programprehrane.com</a>
-                    <a href="https://www.plan-ishrane.com">www.plan-ishrane.com</a>
-                    <a href="https://www.nutriprog.com">www.nutriprog.com</a>
+      <section id="framework">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Tehnologije</h2>
+                    <p class="lead">
+                        Za razvoj mobilnih i web aplikacija koristimo najnovije dostupne tehnologije.
+                    </p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="well portfolio">
-                    <h2 style="font-size:14px" class="text-center">Program Prehrane 5.0</h2>
-                    <img src="assets/img/program_prehrane_5.png" class="img-thumbnail" />
-                    <em>računalni program za izradu uravnoteženih jelovnika i plana tjelesne aktivnosti</em>
-                    <a href="https://www.programprehrane.com/program-prehrane-5.html">www.programprehrane.com</a>
-                </div>
+            <div class="text-center">
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="96px" height="96px">
+                    <g id="surface1">
+                        <path style=" fill:#E65100;" d="M 41 5 L 7 5 L 10 39 L 24 43 L 38 39 Z " />
+                        <path style=" fill:#FF6D00;" d="M 24 8 L 24 39.898438 L 35.199219 36.699219 L 37.699219 8 Z " />
+                        <path style=" fill:#FFFFFF;" d="M 24 25 L 24 21 L 32.601563 21 L 31.898438 32.5 L 24 35.101563 L 24 30.898438 L 28.101563 29.5 L 28.398438 25 Z M 32.898438 17 L 33.199219 13 L 24 13 L 24 17 Z " />
+                        <path style=" fill:#EEEEEE;" d="M 24 30.898438 L 24 35.101563 L 16.101563 32.5 L 15.699219 27 L 19.699219 27 L 19.898438 29.5 Z M 19.101563 17 L 24 17 L 24 13 L 14.898438 13 L 15.601563 25 L 24 25 L 24 21 L 19.398438 21 Z " />
+                    </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="96px" height="96px">
+                    <g id="surface1">
+                        <path style=" fill-rule:evenodd;fill:#37474F;" d="M 22.902344 3.285156 C 23.582031 2.90625 24.417969 2.90625 25.097656 3.285156 C 28.449219 5.167969 38.546875 10.835938 41.902344 12.71875 C 42.582031 13.101563 43 13.804688 43 14.566406 C 43 18.332031 43 29.667969 43 33.433594 C 43 34.195313 42.582031 34.898438 41.902344 35.28125 C 38.546875 37.164063 28.453125 42.832031 25.097656 44.714844 C 24.417969 45.09375 23.582031 45.09375 22.902344 44.714844 C 19.546875 42.832031 9.453125 37.164063 6.097656 35.28125 C 5.417969 34.898438 5 34.195313 5 33.433594 C 5 29.667969 5 18.332031 5 14.566406 C 5 13.804688 5.417969 13.101563 6.097656 12.71875 C 9.449219 10.835938 19.550781 5.167969 22.902344 3.285156 Z " />
+                        <path style=" fill-rule:evenodd;fill:#546E7A;" d="M 5.304688 34.402344 C 5.039063 34.046875 5 33.710938 5 33.253906 C 5 29.511719 5 18.242188 5 14.496094 C 5 13.738281 5.417969 13.039063 6.09375 12.660156 C 9.4375 10.789063 19.5 5.152344 22.84375 3.28125 C 23.519531 2.902344 24.4375 2.910156 25.113281 3.289063 C 28.457031 5.160156 38.484375 10.746094 41.828125 12.617188 C 42.097656 12.769531 42.304688 12.953125 42.488281 13.195313 Z " />
+                        <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 24 10 C 31.726563 10 38 16.273438 38 24 C 38 31.726563 31.726563 38 24 38 C 16.273438 38 10 31.726563 10 24 C 10 16.273438 16.273438 10 24 10 Z M 24 17 C 27.863281 17 31 20.136719 31 24 C 31 27.863281 27.863281 31 24 31 C 20.136719 31 17 27.863281 17 24 C 17 20.136719 20.136719 17 24 17 Z " />
+                        <path style=" fill-rule:evenodd;fill:#455A64;" d="M 42.484375 13.203125 C 43 13.6875 42.992188 14.414063 42.992188 14.988281 C 42.992188 18.785156 42.960938 29.578125 43 33.371094 C 43.003906 33.769531 42.871094 34.1875 42.675781 34.5 L 23.59375 24 Z " />
+                        <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 34 20 L 35 20 L 35 28 L 34 28 Z " />
+                        <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 37 20 L 38 20 L 38 28 L 37 28 Z " />
+                        <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 32 25 L 40 25 L 40 26 L 32 26 Z " />
+                        <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 32 22 L 40 22 L 40 23 L 32 23 Z " />
+                    </g>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
+                    <path style="fill:#673AB7;" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5  V37z" />
+                    <path style="fill:#FFFFFF;" d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18  c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3  C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75  c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
+                    <polygon style="fill:#BDBDBD;" points="23.933,2 3,9.285 6.308,36.408 23.955,46 41.693,36.278 45,9.156 " />
+                    <polygon style="fill:#B71C1C;" points="42.818,10.527 24,4.135 24,43.695 39.832,35.017 " />
+                    <polygon style="fill:#DD2C00;" points="23.941,4.115 5.181,10.644 8.168,35.143 23.951,43.721 24,43.695 24,4.135 " />
+                    <polygon style="fill:#BDBDBD;" points="24,5.996 24,15.504 32.578,34 36.987,34 " />
+                    <polygon style="fill:#EEEEEE;" points="11.013,34 15.422,34 24,15.504 24,5.996 " />
+                    <rect x="24" y="24" style="fill:#BDBDBD;" width="6" height="4" />
+                    <rect x="18" y="24" style="fill:#EEEEEE;" width="6" height="4" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
+                    <g id="surface1">
+                        <path style="fill:#7CB342;" d="M12,29c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V29z" />
+                        <path style="fill:#7CB342;" d="M40,29c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V29z" />
+                        <path style="fill:#7CB342;" d="M22,40c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V40z" />
+                        <path style="fill:#7CB342;" d="M30,40c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V40z" />
+                        <path style="fill:#7CB342;" d="M14,18v15c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V18H14z" />
+                        <path style="fill:#7CB342;" d="M24,8c-6,0-9.7,3.6-10,8h20C33.7,11.6,30,8,24,8z M20,13.6c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1   s1,0.4,1,1C21,13.1,20.6,13.6,20,13.6z M28,13.6c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1C29,13.1,28.6,13.6,28,13.6z" />
+                        <path style="fill:#7CB342;" d="M28.3,10.5c-0.2,0-0.4-0.1-0.6-0.2c-0.5-0.3-0.6-0.9-0.3-1.4l1.7-2.5c0.3-0.5,0.9-0.6,1.4-0.3   c0.5,0.3,0.6,0.9,0.3,1.4l-1.7,2.5C29,10.3,28.7,10.5,28.3,10.5z" />
+                        <path style="fill:#7CB342;" d="M19.3,10.1c-0.3,0-0.7-0.2-0.8-0.5l-1.3-2.1c-0.3-0.5-0.2-1.1,0.3-1.4c0.5-0.3,1.1-0.2,1.4,0.3   l1.3,2.1c0.3,0.5,0.2,1.1-0.3,1.4C19.7,10,19.5,10.1,19.3,10.1z" />
+                    </g>
+                </svg>
             </div>
-            <div class="col-sm-3">
-                <div class="well portfolio">
-                    <h2 style="font-size:14px" class="text-center">Evidencija teretane</h2>
-                    <img src="assets/img/evidencija_teretane.jpg" class="img-thumbnail" />
-                    <em>web aplikacija vođenje evidencije o članovima i naplate članarine</em>
+            <hr />
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>O nama</h2>
+                    <p class="lead">
+                        Obrt za računalno programiranje IG PROG osnovan je 2012 g. sa primarnim ciljem razvoja softvera za nutricioniste <a href="https://www.programprehrane.com" title="Program Prehrane">Program Prehrane</a>.
+                        Od prve verzije programa izrađene u VB4 iz 2008g pa do danas program je doživio 6 verzija i evoluirao je u modernu web aplikacije sa preko 300 zadovoljnih korisnika iz Hrvatske i zemalja regije.
+                        Program Prehrane je dobitnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija. Više o programu pogledajte <a href="https://www.programprehrane.com" title="Program Prehrane">ovdje...</a><br />
+                    </p>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="well portfolio">
-                    <h2 style="font-size:14px" class="text-center">Promo tekstil</h2>
-                    <img src="assets/img/promo_tekstil.png" class="img-thumbnail" />
-                    <em>web shop za prodaju tekstilnih proizvoda</em>
-                    <a href="https://www.promo-tekstil.com">www.promo-tekstil.com</a>
+                <div class="col-sm-2">
+                    <img src="assets/img/program_prehrane_web.jpg" alt="Program Prehrane Web" />
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="awards" class="container pt">
-        <h3>O obrtu</h3>
-        <hr />
-        <div class="row">
-            <div class="col-sm-7">
-                <p class="text-justify">
-                    Obrt za računalno programiranje <strong>IG PROG</strong> osnovam je 2012 g. sa primarnim ciljem 
-                    razvoja računalnog programa za izradu uravnoteženih jelovnika i plana tjelesne aktivnosti <a href="https://www.programprehrane.com">Program Prehrane</a>.
-                    Od prve verzije programa iz 2008 g pa do danas program je doživio 6 verzija i je evoluirao u modernu web aplikacije sa preko 300 zadovoljnih korisnika iz Hrvatske i zemalja regije.
-                    <a href="https://www.programprehrane.com">Program Prehrane</a> je dobotnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija.
-                    Više o programu pogledajte <a href="https://www.programprehrane.com">ovdje</a>...
-                </p>
-            </div>
-            <div class="col-sm-5">
-                <h3>Priznanja</h3>
-                <hr />
-                <div class="row">
-                    <div class="col-xs-3">
-                        <img src="assets/img/awards/inova34.jpg" class="img-responsive" />
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div ng-controller="contactCtrl" class="row">
+                <div class="col-sm-5">
+                    <label>{{config.company}}</label>
+                    <p>OIB {{config.oib}}</p>
+                    <p><i class="fa fa-home"></i> {{config.address}}</p>
+                    <p><a href="tel:+385 98 330 966"><i class="fa fa-phone"></i> {{config.phone}}</a></p>
+                    <p><a href="mailto:{{config.email}}"><i class="far fa-envelope"></i> {{config.email}}</a></p>
+                    <p><a href="{{config.url}}"><i class="fa fa-globe"></i> {{config.sitename}}</a></p>
+                </div>
+                <div class="col-sm-7">
+                    <h3 ng-if="!showAlert">Pošaljite upit</h3>
+                    <div ng-if="showAlert" class="alert alert-success">
+                        <strong>Poruka je uspješno poslana!</strong>
+                        <p>Odgovorit ćemo Vam u najskorijem roku.</p>
                     </div>
-                    <div class="col-xs-3">
-                        <img src="assets/img/awards/inova37.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-xs-3">
-                        <img src="assets/img/awards/AgroArca.jpg" class="img-responsive" />
-                    </div>
-                    <div class="col-xs-3">
-                        <img src="assets/img/awards/inventum2013.jpg" class="img-responsive" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact" class="container" style="padding-top:200px">
-        <h3>Kontakt</h3>
-        <hr />
-        <div class="row">
-            <div ng-controller="contactCtrl" class="col-sm-5">
-                <label>IG PROG, obrt za računalno programiranje</label>
-                <p>OIB {{config.oib}}</p>
-                <p>IBAN {{config.iban}}</p>
-                <p><span class="fa fa-home"></span> Ludvetov breg 5, 51000 Rijeka, Hrvatska</p>
-                <p><a href="tel:+385 98 330 966"><span class="fa fa-phone"></span> +385 98 330 966</a></p>
-                <p><a href="mailto:igprog@yahoo.com"><span class="fa fa-send-o"></span> igprog@yahoo.com</a></p>
-                <p><a href="https://www.programprehrane.com"><span class="fa fa-globe"></span> www.programprehrane.com</a> | <a href="https://www.igprog.hr"> www.igprog.hr</a></p>
-            </div>
-            <div ng-controller="contactCtrl" class="col-sm-7 slideanim">
-                <h3>Pošaljite upit</h3>
-                <div ng-if="showAlert" class="alert alert-success">
-                    <strong>Poruka je uspješno poslana!</strong>
-                    <p>Odgovorit ćemo Vam u najskorijem roku.</p>
-                </div>
-                <div ng-if="!showAlert">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input ng-model="d.name" class="form-control" name="name" placeholder="Ime" type="text" required>
+                    <div ng-if="!showAlert">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input ng-model="d.name" class="form-control" name="name" placeholder="Ime" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input ng-model="d.email" class="form-control" name="email" placeholder="Email" type="email" required>
+                            </div>
                         </div>
-                        <div class="col-sm-6 form-group">
-                            <input ng-model="d.email" class="form-control" name="email" placeholder="Email" type="email" required>
-                        </div>
-                    </div>
-                    <textarea ng-model="d.message" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-primary pull-right" ng-disabled="isSendButtonDisabled" ng-click="send(d)"><span ng-class="sendicon"></span> {{sendicontitle}}</button>
+                        <textarea ng-model="d.message" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-outline-primary pull-right" ng-disabled="isSendButtonDisabled" ng-click="send(d)"><span ng-class="sendicon"></span> {{sendicontitle}}</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <footer class="text-center pt">
-        <div class="navbar-fixed-bottom m10">
-            <a href="#home" title="Na vrh">
-                <span class="fa fa-chevron-up fa-2x"></span>
-            </a>
-        </div>
-        <div style="background-color:lightgrey">
-            <div class="p5 text-small">
-                <a href="https://www.programprehrane.com">www.programprehrane.com</a> | 
-                <a href="https://www.plan-ishrane.com">www.plan-ishrane.com</a> |
-                <a href="https://www.nutriprog.com">www.nutriprog.com</a> |
-                <a href="https://www.promo-tekstil.com">www.promo-tekstil.com</a> |
-                <a href="https://www.jdp-certifikati.hr">www.jdp-certifikati.hr</a> |
-                <a href="https://www.apartmentselvira.com">www.apartmentselvira.com</a> |
-                <a href="https://www.villamilibrela.com">www.villamilibrela.com</a>
-            </div>
-        </div>
-        <div>
-            <span class="pull-right">Copyright © {{year}} IG PROG</span>
-        </div>
+    </section>
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; IG PROG 2019</p>
+      </div>
     </footer>
+      <script src="../assets/js/vendor/jquery.min.js"></script>
+      <script src="../assets/js/vendor/bootstrap.min.js"></script>
+      <script src="assets/js/app.js"></script>
+  </body>
 
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
 </html>
