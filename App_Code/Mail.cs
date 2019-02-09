@@ -23,7 +23,7 @@ public class Mail : System.Web.Services.WebService {
     public Mail() {
     }
 
-    public void SendMail(string sendTo, string messageSubject, string messageBody) {
+    public string SendMail(string sendTo, string messageSubject, string messageBody) {
         try {
             MailMessage mailMessage = new MailMessage();
             SmtpClient Smtp_Server = new SmtpClient();
@@ -38,9 +38,11 @@ public class Mail : System.Web.Services.WebService {
             mailMessage.Body = messageBody;
             mailMessage.IsBodyHtml = true;
             Smtp_Server.Send(mailMessage);
-        } catch (Exception e) {}
+            return "sent";
+        } catch (Exception e) {
+            return e.Message;
+        }
     }
-
 
     [WebMethod]
     public string Send(string name, string email, string messageSubject, string message) {
@@ -50,10 +52,7 @@ public class Mail : System.Web.Services.WebService {
 <p>Ime: {0}</p>
 <p>Email: {1}</p>
 <p>Poruka: {2}</p>", name, email, message);
-        try {
-            SendMail(myEmail, messageSubject, messageBody);
-            return "ok";
-        } catch (Exception e) { return ("Error: " + e); }
+        return SendMail(myEmail, messageSubject, messageBody);
     }
 
 }

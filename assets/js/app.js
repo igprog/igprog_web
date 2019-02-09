@@ -13,7 +13,7 @@ angular.module('app', [])
           });
     };
     getConfig();
-    $scope.today = new Date;
+    $scope.year = (new Date).getFullYear();
 }])
 
 .controller('contactCtrl', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
@@ -31,16 +31,20 @@ angular.module('app', [])
         $scope.isSendButtonDisabled = true;
         $scope.sendicon = 'fa fa-spinner fa-spin';
         $scope.sendicontitle = 'Šaljem';
-        $http({
-            url: 'Mail.asmx/Send',
-            method: 'POST',
+        $http({ url: 'Mail.asmx/Send', method: 'POST',
             data: { name: d.name, email: d.email, messageSubject: 'Upit', message: d.message }
-        })
-       .then(function (response) {
-           $scope.showAlert = true;
-           $scope.sendicon = 'far fa-envelope';
-           $scope.sendicontitle = 'Pošalji';
-           window.location.hash = 'contact';
+        }).then(function (response) {
+           if (response.data.d == 'sent') {
+               $scope.showAlert = true;
+               $scope.sendicon = 'far fa-envelope';
+               $scope.sendicontitle = 'Pošalji';
+               window.location.hash = 'contact';
+           } else {
+               $scope.showAlert = false;
+               $scope.sendicon = 'far fa-envelope';
+               $scope.sendicontitle = 'Pošalji';
+               alert(response.data.d);
+           }
        },
        function (response) {
            $scope.showAlert = false;

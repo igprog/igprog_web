@@ -25,7 +25,7 @@
     <script src="assets/js/vendor/angular-aria.min.js"></script>
 </head>
 
-  <body id="page-top" ng-app="app" ng-controller="appCtrl">
+  <body id="page-top" ng-app="app" ng-controller="appCtrl" ng-cloak>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <img src="../assets/img/logo.png" style="height:30px" />
@@ -62,15 +62,15 @@
     <section id="services" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <p class="lead"><strong>IG PROG</strong> <em>obrt za računalno progrmairanje</em> nudi kompletna programska rješenja prema Vašim specifičnim potrebama, od dizajna do smještaja aplikacije na server.</p>
+          <div class="col-sm-8">
+            <p class="lead text-justify"><strong>IG PROG</strong> <em>obrt za računalno progrmairanje</em> nudi kompletna programska rješenja prema Vašim specifičnim potrebama, od dizajna do smještaja aplikacije na server.</p>
               <h2>Usluge:</h2>
               <h2 style="font-size:16px"><img src="assets/img/icons/web.png" /> Izrada web aplikacija</h2>
               <h2 style="font-size:16px"><img src="assets/img/icons/desktop.png" /> Izrada računalnih programa</h2>
               <h2 style="font-size:16px"><img src="assets/img/icons/android.png" /> Izrada mobilnih aplikacija</h2>
           </div>
-            <div class="col-lg-4">
-                <img src="../assets/img/mockup.png" />
+            <div class="col-sm-4">
+                <img src="../assets/img/mockup.png" alt="IG PROG" class="img-fluid" />
             </div>
         </div>
       </div>
@@ -144,17 +144,17 @@
 
     <section id="about">
         <div class="container">
+            <h2>O nama</h2>
             <div class="row">
                 <div class="col-sm-8">
-                    <h2>O nama</h2>
-                    <p class="lead">
+                    <p class="lead text-justify">
                         Obrt za računalno programiranje IG PROG osnovan je 2012 g. sa primarnim ciljem razvoja softvera za nutricioniste <a href="https://www.programprehrane.com" title="Program Prehrane">Program Prehrane</a>.
                         Od prve verzije programa izrađene u VB4 iz 2008g pa do danas program je doživio 6 verzija i evoluirao je u modernu web aplikacije sa preko 300 zadovoljnih korisnika iz Hrvatske i zemalja regije.
                         Program Prehrane je dobitnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija. Više o programu pogledajte <a href="https://www.programprehrane.com" title="Program Prehrane">ovdje...</a><br />
                     </p>
                 </div>
-                <div class="col-sm-2">
-                    <img src="assets/img/program_prehrane_web.jpg" alt="Program Prehrane Web" />
+                <div class="col-sm-4">
+                    <img src="assets/img/program_prehrane_web.jpg" alt="Program Prehrane Web" class="img-fluid rounded" />
                 </div>
             </div>
         </div>
@@ -200,12 +200,10 @@
     </section>
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; IG PROG 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; IG PROG {{year}}</p>
       </div>
     </footer>
-      <script src="../assets/js/vendor/jquery.min.js"></script>
-      <script src="../assets/js/vendor/bootstrap.min.js"></script>
-      <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 
 </html>
