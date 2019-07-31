@@ -16,6 +16,7 @@ using System.Text;
 [System.Web.Script.Services.ScriptService]
 public class Mail : System.Web.Services.WebService {
     string myEmail = ConfigurationManager.AppSettings["myEmail"];
+    string myEmailName = ConfigurationManager.AppSettings["myEmailName"];
     string myPassword = ConfigurationManager.AppSettings["myPassword"];
     int myServerPort = Convert.ToInt32(ConfigurationManager.AppSettings["myServerPort"]);
     string myServerHost = ConfigurationManager.AppSettings["myServerHost"];
@@ -33,7 +34,7 @@ public class Mail : System.Web.Services.WebService {
             Smtp_Server.EnableSsl = true;
             Smtp_Server.Host = myServerHost;
             mailMessage.To.Add(sendTo);
-            mailMessage.From = new MailAddress(myEmail);
+            mailMessage.From = new MailAddress(myEmail, myEmailName);
             mailMessage.Subject = messageSubject;
             mailMessage.Body = messageBody;
             mailMessage.IsBodyHtml = true;
