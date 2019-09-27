@@ -24,39 +24,22 @@
     <script src="assets/js/vendor/angular-animate.min.js"></script>
     <script src="assets/js/vendor/angular-aria.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
-
     <style>
         body {
             font-family: 'Encode Sans Expanded';
             font-size: 16px;
             position: relative;
         }
-    </style>
 
-    <style>
-        * {
-            box-sizing: border-box;
+        .intro-2 {
+            background: url("https://mdbootstrap.com/img/Photos/Others/img (42).jpg")no-repeat center center;
+            background-size: cover;
         }
-
-        .zoom {
-            transition: transform .6s;
-        }
-
-            .zoom:hover {
-                -ms-transform: scale(1.1); /* IE 9 */
-                -webkit-transform: scale(1.1); /* Safari 3-8 */
-                transform: scale(1.1);
-            }
     </style>
-
-
-
 </head>
 
 
 <body ng-app="app" ng-controller="appCtrl" data-spy="scroll" data-target=".navbar" data-offset="60" >
-   
-   
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div>
             <img src="../assets/img/logo.png" style="height:30px" />
@@ -114,7 +97,7 @@
             <div class="col-md-8">
                 <p class="text-justify">
                     Obrt za računalno programiranje IG PROG osnovan je 2012 g. Bavi se izradom custom aplikacija i prodajom gotovih programskih rješenja.
-                    Klijentima nudimo kompletnu uslugu, od analize, dizajna, programskog rješenja, smještaja stranice na server od održavanja i tehničke podrške.
+                    Klijentima nudimo kompletnu uslugu, od analize, dizajna, programskog rješenja, smještaja stranice na server do održavanja i tehničke podrške.
                 </p>
                 <p>Za razvoj aplikacija koristimo najnovije tehnologije:</p>
                 <div class="text-center">
@@ -186,14 +169,14 @@
         <div class="lead">
             Neki od naših dosadašnjih projekata...
         </div>
-        <div class="row mt-2" style="overflow: hidden;">
+        <div class="row mt-2 text-center" style="overflow: hidden;">
             <div class="col-lg-4 p-2">
                 <div class="card shadow zoom" style="min-height:450px">
                     <img class="card-img-top" src="../assets/img/portfolio/ppw.png" alt="Card image">
                     <div class="card-body bg-light">
                         <h4 class="card-title">Program Prehrane Web</h4>
                         <p class="card-text">Web aplikacija za nutricioniste</p>
-                        <a href="https://www.programprehrane.com" class="btn btn-secondary">ProgramPrehrane.com</a>
+                        <a href="https://www.programprehrane.com">ProgramPrehrane.com</a>
                     </div>
                 </div>
             </div>
@@ -213,12 +196,12 @@
                     <div class="card-body bg-light">
                         <h4 class="card-title">Promo Tekstil</h4>
                         <p class="card-text">Web shop</p>
-                        <a href="https://www.promo-tekstil.com" class="btn btn-secondary">promo-tekstil.com</a>
+                        <a href="https://www.promo-tekstil.com">promo-tekstil.com</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-2">
+        <div class="row mt-2 text-center">
             <div class="col-lg-4 p-2">
                 <div class="card shadow zoom" style="min-height:450px">
                     <img class="card-img-top" src="../assets/img/portfolio/kup.png" alt="Card image">
@@ -235,7 +218,7 @@
                     <div class="card-body bg-light">
                         <h4 class="card-title">Program Prehrane 5.0</h4>
                         <p class="card-text">Računalni program za izradu uravnoteženih jelovnika</p>
-                        <a href="https://www.programprehrane.com/program-prehrane-5.html" class="btn btn-secondary">ProgramPrehrane.com</a>
+                        <a href="https://www.programprehrane.com/program-prehrane-5.html">ProgramPrehrane.com</a>
                     </div>
                 </div>
             </div>
@@ -255,9 +238,9 @@
         <h2>Cijene</h2>
         <div>
             <p class="text-justify">
-                Definiranje cijene ovisi o više parametara: Složenosti projekta, tehnologiji, rokovima izrade itd.
-                Na primjeru jedno relativno jednostavne aplikacije kao što je Evidencija članova i treninga za sportske klubove,
-                odredit ćemo okvirnu cijenu izrade po cijeni programiranja od 125 kn/satu.
+                Cijena programiranja iznosi <strong>125 kn/satu</strong>.<br />
+                Definiranje ukupne cijene ovisi o više parametara: Složenosti projekta, tehnologiji, rokovima izrade itd.
+                Na sljedećem primjeru je prikazana okvirna cijena za izradu jedne relativno jednostavne aplikacije kao što je evidencija članova i treninga za sportske klubove.
             </p>
             <ul>
                 <li>Analiza: 10h: 10*125 = 1250 kn</li>
@@ -267,8 +250,8 @@
                 <li>Testiranje: 10h: 10*125 = 1250 kn</li>
                 <li>Ukupno: <strong>10.250,00 kn</strong></li>
             </ul>
-            Naknadno se ugovara održavanje aplikacije što uključuje edukacije korisnika, tehničku podršku i nadogradnje aplikacije.
-            <div>Stvarna ponuda se radi na osnovu detaljne analize projektnog zadatka</div>
+            Naknadno se ugovara hosting i održavanje aplikacije što uključuje edukacije korisnika, tehničku podršku i nadogradnje aplikacije.
+            <div>Stvarna ponuda se radi na osnovu detaljne analize projektnog zadatka.</div>
         </div>
     </div>
     <div id="section5" class="container-fluid section bg-secondary text-white p-5">

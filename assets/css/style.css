@@ -1,6 +1,6 @@
 ﻿ /*!
 style.css
-(c) 2017 IG PROG, www.igprog.hr
+(c) 2019 IG PROG, www.igprog.hr
 */
  html {
       height:auto;
@@ -254,6 +254,23 @@ header {
 .section {
   padding: 50px 0;
 }
+
+/***** Prtfolio box *****/
+* {
+    box-sizing: border-box;
+}
+
+.zoom {
+    transition: transform .6s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+/***** Prtfolio box *****/
+
 
 
 
