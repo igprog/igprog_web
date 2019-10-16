@@ -251,7 +251,7 @@ header {
   padding: 50px 0;
 }
 
-/***** Prtfolio box *****/
+/***** Portfolio box *****/
 * {
     box-sizing: border-box;
 }
@@ -265,9 +265,6 @@ header {
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
 }
-/***** Prtfolio box *****/
-
-
-
+/***** Portfolio box *****/
 
 

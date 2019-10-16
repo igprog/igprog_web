@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web aplikacija za vođenje kase uzajamne pomoći">
+    <meta name="author" content="IG PROG, vl. Igor Gašparović">
+    <title>Kasa uzajamne pomoći | Web aplikacija</title>
+    <link href="../assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="../assets/js/vendor/jquery.min.js"></script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/angular.min.js"></script>
+    <script src="../assets/js/vendor/angular-animate.min.js"></script>
+    <script src="../assets/js/vendor/angular-aria.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Encode Sans Expanded';
+            font-size: 16px;
+            position: relative;
+        }
+
+        .banner {
+            background: url("assets/img/banner.jpg") no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body ng-app="app" ng-controller="appCtrl" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div>
+            <!--<img src="../assets/img/logo.png" style="height:30px" />-->
+            KUP
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#section1">Usluge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">O nama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Portfolio</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="uputa.html">Uputa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section5">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="bg-primary text-white banner">
+        <div class="container text-center" style="padding:100px 0 100px 0">
+            <!--<img src="assets/img/icons/monitor.png" />-->
+            <h1>Kasa uzajamne pomoći</h1>
+            <h2>Web Aplikacija</h2>
+            <p class="lead">Stranica je u izradi</p>
+        </div>
+    </header>
+    <div>
+        <div id="section5" class="container-fluid section bg-secondary text-white p-5">
+            <div class="m10">
+                Ako i Vama treba brzo i kvalitetno programsko rješenje obratite nam se s povjerenjem.
+            </div>
+            <h2 class="text-white">Kontakt</h2>
+            <div ng-controller="contactCtrl" class="row">
+                <div class="col-sm-5">
+                    <label>{{config.company}}</label>
+                    <p>OIB {{config.oib}}</p>
+                    <p><i class="fa fa-home"></i> {{config.address}}</p>
+                    <p><a href="tel:+385 98 330 966" class="text-white"><i class="fa fa-phone"></i> {{config.phone}}</a></p>
+                    <p><a href="mailto:{{config.email}}" class="text-white"><i class="far fa-envelope"></i> {{config.email}}</a></p>
+                    <p><a href="{{config.url}}" class="text-white"><i class="fa fa-globe"></i> {{config.sitename}}</a></p>
+                </div>
+                <div class="col-sm-7">
+                    <h3 ng-if="!showAlert">Pošaljite upit</h3>
+                    <div ng-if="showAlert" class="alert alert-success">
+                        <strong>Poruka je uspješno poslana!</strong>
+                        <p>Odgovorit ćemo Vam u najskorijem roku.</p>
+                    </div>
+                    <div ng-if="!showAlert">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input ng-model="d.name" class="form-control" name="name" placeholder="Ime" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input ng-model="d.email" class="form-control" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea ng-model="d.message" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-outline-light pull-right" ng-disabled="isSendButtonDisabled" ng-click="send(d)"><span ng-class="sendicon"></span> {{sendicontitle}}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

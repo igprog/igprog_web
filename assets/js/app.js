@@ -7,7 +7,7 @@ angular.module('app', [])
 .controller('appCtrl', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
 
     var getConfig = function () {
-        $http.get('./config/config.json')
+        $http.get('../config/config.json')
           .then(function (response) {
               $rootScope.config = response.data;
           });

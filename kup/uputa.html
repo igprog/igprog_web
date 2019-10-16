@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web aplikacija za vođenje kase uzajamne pomoći">
+    <meta name="author" content="IG PROG, vl. Igor Gašparović">
+    <title>Kasa uzajamne pomoći | Uputa</title>
+    <link href="../assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="../assets/js/vendor/jquery.min.js"></script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/angular.min.js"></script>
+    <script src="../assets/js/vendor/angular-animate.min.js"></script>
+    <script src="../assets/js/vendor/angular-aria.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Encode Sans Expanded';
+            font-size: 16px;
+            position: relative;
+        }
+        ul.nav-pills {
+            top: 150px;
+            position: fixed;
+        }
+        div.col-8 div {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div>
+            <h1>Kasa uzajamne pomoći</h1>
+            <h2 class="small">Uputa za korištenje aplikacije KUP</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="uputa.html">Uputa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section5">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class="container-fluid">
+            <div class="row" style="margin-top:150px">
+                <nav class="col-sm-2 col-4 bg-light" id="myScrollspy">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#section1">Section 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Section 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Section 3</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#section41">Link 1</a>
+                                <a class="dropdown-item" href="#section42">Link 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-sm-10 col-8">
+                    <div id="section1">
+                        <h1>Section 1</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <div id="section2">
+                        <h1>Section 2</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <div id="section3">
+                        <h1>Section 3</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <div id="section41">
+                        <h1>Section 4-1</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                    <div id="section42">
+                        <h1>Section 4-2</h1>
+                        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+
+<!--<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div>
+            KUP
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="uputa.html">Uputa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section5">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="p-3">
+        <div class="container-fluid" style="margin-top:60px">
+            <h1>Kasa uzajamne pomoći</h1>
+            <h2 class="small">Uputa za korištenje aplikacije KUP</h2>
+            <hr />
+        </div>
+        <div class="row" style="padding-top:20px">
+            <div class="col-4">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item" href="#list-item-1_">Item 1</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2_">Item 2</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3_">Item 3</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4_">Item 4</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example z-depth-1">
+                    <h4 id="list-item-1_">Item 1</h4>
+                    <p>
+                        Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna
+                        ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat
+                        laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna
+                        eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit
+                        adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id
+                        cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.
+                    </p>
+                    <h4 id="list-item-2_">Item 2</h4>
+                    <p>
+                        Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non
+                        elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in
+                        duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis
+                        ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore
+                        officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur
+                        ipsum commodo tempor sunt in proident.
+                    </p>
+                    <h4 id="list-item-3">Item 3</h4>
+                    <p>
+                        Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum
+                        fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor
+                        mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.
+                    </p>
+                    <h4 id="list-item-4">Item 4</h4>
+                    <p>
+                        Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum
+                        fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor
+                        mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>-->
+</html>
