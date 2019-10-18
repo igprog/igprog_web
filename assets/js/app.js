@@ -31,7 +31,7 @@ angular.module('app', [])
         $scope.isSendButtonDisabled = true;
         $scope.sendicon = 'fa fa-spinner fa-spin';
         $scope.sendicontitle = 'Šaljem';
-        $http({ url: 'Mail.asmx/Send', method: 'POST',
+        $http({ url: '../Mail.asmx/Send', method: 'POST',
             data: { name: d.name, email: d.email, messageSubject: 'Upit', message: d.message }
         }).then(function (response) {
            if (response.data.d == 'sent') {
