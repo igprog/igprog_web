@@ -1,6 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="hr">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47317436-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-47317436-7');
+    </script>-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Web aplikacija za vođenje kase uzajamne pomoći">
@@ -31,7 +40,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div>
             <!--<img src="../assets/img/logo.png" style="height:30px" />-->
-            <h1>KUP - Kasa uzajamne pomoći</h1>
+            <h1>IG KUP - Kasa uzajamne pomoći</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -75,13 +84,14 @@
                         <li class="list-group-item"><label>Bilanca</label></li>
                     </ul>
                 </div>
-                <div class="col-sm-9 text-center">
+                <div class="col-sm-9">
                     <img src="img/main.png" class="img-responsive" />
-                    <div class="mt-5">
-                        <a href="uputa.html" title="KUP-uputa"><h2 class="text-primary"><i class="fa fa-info-circle"></i> Uputa za korištenje</h2></a>
-                    </div>
-
                 </div>
+            </div>
+            <p>Za više informacija o aplikaciji pošaljite upit na <a href="mailto:{{config.email}}"> {{config.email}}</a>.</p>
+            <hr />
+            <div class="mt-5">
+                <a href="uputa.html" class="btn btn-outline-primary btn-lg" title="KUP-uputa"><i class="fa fa-info-circle"></i> Uputa za korištenje</a>
             </div>
         </div>
     </header>
@@ -90,7 +100,7 @@
             <h2 class="text-white">Kontakt</h2>
             <div ng-controller="contactCtrl" class="row">
                 <div class="col-sm-5">
-                    <label>{{config.company}}</label>
+                    <label><a href="../index.html" class="text-white" title="igprog.hr">{{config.company}}</a></label>
                     <p>OIB {{config.oib}}</p>
                     <p><i class="fa fa-home"></i> {{config.address}}</p>
                     <p><a href="tel:+385 98 330 966" class="text-white"><i class="fa fa-phone"></i> {{config.phone}}</a></p>
