@@ -78,9 +78,13 @@
                 <div class="col-sm-8">
                     <p class="text-justify lead"><strong>IG PROG</strong> <em>obrt za računalno progrmairanje</em> nudi izradu programskih rješenja prema Vašim specifičnim potrebama.</p>
                     <h2>Usluge:</h2>
-                    <h2 style="font-size:16px"><img src="assets/img/icons/web.png" /> Izrada web aplikacija</h2>
-                    <h2 style="font-size:16px"><img src="assets/img/icons/desktop.png" /> Izrada računalnih programa</h2>
-                    <h2 style="font-size:16px"><img src="assets/img/icons/android.png" /> Izrada mobilnih aplikacija</h2>
+                    <h2 style="font-size:16px; display:inline">Izrada web aplikacija</h2><strong class="p-2">|</strong>
+                    <h2 style="font-size:16px; display:inline">Izrada web stranica</h2><strong class="p-2">|</strong>
+                    <h2 style="font-size:16px; display:inline">Izrada web shopova</h2><strong class="p-2">|</strong>
+                    <h2 style="font-size:16px; display:inline">Izrada računalnih programa</h2><strong class="p-2">|</strong>
+                    <h2 style="font-size:16px; display:inline">Izrada mobilnih aplikacija</h2><strong class="p-2">|</strong>
+                    <h2 style="font-size:16px; display:inline">SEO optimizacija</h2><strong class="p-2">|</strong>
+                    <h2 style="font-size:16px; display:inline">AddWords kampanja</h2>
                 </div>
                 <div class="col-sm-4">
                     <img src="../assets/img/mockup.png" alt="IG PROG" class="img-fluid" />
@@ -154,7 +158,7 @@
             </div>
             <div class="text-justify">
                 IG PROG je osnovan sa primarnim ciljem razovja softvera za nutricioniste <a href="https://www.programprehrane.com" title="Program Prehrane">Program Prehrane</a>.
-                Od prve verzije računalnog programa razvijenog u Visual Basic-u 4 2008 g. pa do danas, program se razvio u modernu web aplikaciju sa preko 400 zadovoljnih korisnika iz Hrvatske i zemalja regije.
+                Od prve verzije računalnog programa iz 2008 g, razvijenog u Visual Basic 4, pa do danas, program se razvio u modernu web aplikaciju sa preko 400 zadovoljnih korisnika iz Hrvatske i zemalja regije.
                 Program Prehrane je dobitnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija. Više o programu pogledajte <a href="https://www.programprehrane.com" title="Program Prehrane">ovdje...</a><br />
                 Tijekom proteklih godina IG PROG je razvio i druga programska rješenja za komercijalnu primjenu kao što su, aplikaciju za praćenje rada teretane,
                 aplikaciju za vođenje energetskih pregleda i evidenciju energetskih certifikata, aplikaciju za evidenciju članova i treninga u sportskim klubovima i aplikacija za vođenje kase uzajamne pomoći.
@@ -229,12 +233,44 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-2 text-center">
+                <div class="col-lg-4 p-2">
+                    <div class="card shadow zoom" style="min-height:450px">
+                        <img class="card-img-top" src="../assets/img/portfolio/studiotanya.png" alt="Card image">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Studio Tanya</h4>
+                            <p class="card-text">Obrt za njegu i masažu tijela</p>
+                            <a href="https://www.studiotanya.hr">studiotanya.hr</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-2">
+                    <div class="card shadow zoom" style="min-height:450px">
+                        <img class="card-img-top" src="../assets/img/portfolio/apartmentselvira.png" alt="Card image">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Apartmani Elvira</h4>
+                            <p class="card-text">Privatni smještaj u Brelima</p>
+                            <a href="https://www.apartmentselvira.com">apartmentselvira.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-2">
+                    <div class="card shadow zoom" style="min-height:450px">
+                        <img class="card-img-top" src="../assets/img/portfolio/villamilibrela.png" alt="Card image">
+                        <div class="card-body bg-light">
+                            <h4 class="card-title">Villa Mili</h4>
+                            <p class="card-text">Villa Mili Brela</p>
+                            <a href="https://www.villamilibrela.com">villamilibrela.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="section4" class="container section">
             <h2>Cijene</h2>
             <div>
                 <p class="text-justify">
-                    Cijena programiranja se kreće od <strong>125 do 200 kn/satu</strong>.<br />
+                    Cijena sata programiranja kreće se od <strong>125 do 200 kn</strong>.<br />
                     Definiranje ukupne cijene ovisi o više parametara: složenosti projekta, tehnologiji, rokovima izrade itd.
                     Na sljedećem primjeru je prikazana okvirna cijena za izradu jedne relativno jednostavne aplikacije kao što je evidencija članova i treninga za sportske klubove.
                 </p>
@@ -291,5 +327,36 @@
         </div>
     </div>
     <script src="assets/js/app.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".navbar a, footer a[href='#home'], a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            var slideanim = function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            }
+            slideanim();
+
+            $(window).scroll(function () {
+                slideanim();
+            });
+        })
+    </script>
 </body>
 </html>
