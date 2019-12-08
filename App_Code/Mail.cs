@@ -20,6 +20,7 @@ public class Mail : System.Web.Services.WebService {
     string myPassword = ConfigurationManager.AppSettings["myPassword"];
     int myServerPort = Convert.ToInt32(ConfigurationManager.AppSettings["myServerPort"]);
     string myServerHost = ConfigurationManager.AppSettings["myServerHost"];
+    string sendTo = ConfigurationManager.AppSettings["sendTo"];
 
     public Mail() {
     }
@@ -30,8 +31,8 @@ public class Mail : System.Web.Services.WebService {
             SmtpClient Smtp_Server = new SmtpClient();
             Smtp_Server.UseDefaultCredentials = false;
             Smtp_Server.Credentials = new NetworkCredential(myEmail, myPassword);
-            Smtp_Server.Port = myServerPort;
-            Smtp_Server.EnableSsl = true;
+            //Smtp_Server.Port = myServerPort;
+            //Smtp_Server.EnableSsl = true;
             Smtp_Server.Host = myServerHost;
             mailMessage.To.Add(sendTo);
             mailMessage.From = new MailAddress(myEmail, myEmailName);
@@ -53,7 +54,7 @@ public class Mail : System.Web.Services.WebService {
 <p>Ime: {0}</p>
 <p>Email: {1}</p>
 <p>Poruka: {2}</p>", name, email, message);
-        return SendMail(myEmail, messageSubject, messageBody);
+        return SendMail(sendTo, messageSubject, messageBody);
     }
 
 }
