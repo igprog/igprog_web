@@ -12,9 +12,6 @@
     <script src="../assets/js/vendor/jquery.min.js"></script>
     <script src="../assets/js/vendor/popper.min.js"></script>
     <script src="../assets/js/vendor/bootstrap.min.js"></script>
-    <!--<script src="../assets/js/vendor/angular.min.js"></script>
-    <script src="../assets/js/vendor/angular-animate.min.js"></script>
-    <script src="../assets/js/vendor/angular-aria.min.js"></script>-->
     <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
     <style>
         body {
@@ -90,6 +87,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#section5">5. Ostali prihodi i rashodi</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section6">6. Mjesečna isplata</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section7">7. Obustave na plaći</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section8">8. Temeljnica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section9">9. Financijske kartice</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section10">10. Bilanca</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="col-sm-10 col-6 text-justify">
@@ -109,6 +121,8 @@
                                 <li>Manipulativni troškovi (koeficjent, za 2% koefcijent je 0.02)</li>
                                 <li>Zadani prok otplate u mjesecima</li>
                                 <li>Šifre <strong>konta</strong> za pojedinu vrestu prometa</li>
+                                <li>Početno stanje žiro računa sa danom početka korištenja aplikacije</li>
+                                <li>Početno stanje prihoda</li>
                                 <li>Postavke ispisa</li>
                             </ul>
                         </p>
@@ -154,7 +168,9 @@
                         <img class="img-responsive img-thumbnail img" src="img/help/isclanjenje1.png" />
                         <p>Pod <strong>status korinsnika</strong> odabrati <em>Neaktivan</em>, odabrati datum isčlanjenja i kliknuti <strong>Spremi</strong>.</p>
                         <div>
-                            <em class="text-danger">* Napomena: Ako je dug veći od ukupno utplaćenog uloga i rata pozajmica, korisnik se ne može isčlaniti.</em>
+                            <em class="text-danger">* Napomena: Ako je dug veći od ukupno utplaćenog uloga i rata pozajmica, korisnik se ne može isčlaniti.<br />
+                            Ako se korisnik želi isčlaniti, a nije podmirio dug, onda se preostali dug automatski oduzima od uloga, a korisniku se isplaćuje ostatak.
+                            </em>
                         </div>
                         <img class="img-responsive img-thumbnail img" src="img/help/isclanjenje2.png" />
                     </div>
@@ -213,6 +229,59 @@
                         </p>
                         <img class="img-responsive img-thumbnail img" src="img/help/ostaliprihodiirashodi1.png" />
                         <img class="img-responsive img-thumbnail img" src="img/help/ostaliprihodiirashodi2.png" />
+                    </div>
+                    <div id="section6" class="section">
+                        <h3>6. Mjesečna isplata</h3>
+                        <p>
+                            Za prikaz svih mjesečnih isplata sa žiro računa kliknuti na <strong>Mjesečna isplata</strong>.<br />
+                            Odabrati mjesec i godinu i kliknuti na <strong>Filter</strong>.<br />
+                            U tablici su prikazne sve isplate u tekućem mjesecu (isplate pozajmica, isplate kod iščćanjenja, troškovi održavanja računa i razni materijalni troškovi).
+                        </p>
+                        <img class="img-responsive img-thumbnail img" src="img/help/mjesecnaisplata.png" />
+                    </div>
+                    <div id="section7" class="section">
+                        <h3>7. Obustave na plaći</h3>
+                        <p>
+                            Za prikaz obustava na plaći kliknuti na <strong>Obustave Na Plaći</strong>.<br />
+                            Odabrati poslovnu jedinicu mjesec i godinu i kliknuti na <strong>Filter</strong>.<br />
+                            Moguć je prikaz ukupnih obustava (ulog + pozajmice) ili po poslovnim jedinicama.<br />
+                        </p>
+                        <div>
+                            <em class="text-danger">* Napomena:
+                                Zvjezdicom su označene samo promjene u odnosu na prethodni mjesec. Ako želite prikazati samo te promjene onda treba kliknuti na <em>Check box</em>: <strong>Prikaži samo promjene u odnosu na prethodni mjesec</strong>.
+                            </em>
+                        </div>
+                        <img class="img-responsive img-thumbnail img" src="img/help/obustavenaplaci.png" />
+                    </div>
+                    <div id="section8" class="section">
+                        <h3>8. Temeljnica</h3>
+                        <p>
+                            Za prikaz temeljnice kliknuti na <strong>Temeljnica</strong>.<br />
+                            Odabrati mjesec i godinu i kliknuti na <strong>Filter</strong>.<br />
+                            U tablici su prikazne sve isplate u tekućem mjesecu (isplate pozajmica, isplate kod iščćanjenja, troškovi održavanja računa i razni materijalni troškovi).
+                        </p>
+                        <img class="img-responsive img-thumbnail img" src="img/help/temeljnica.png" />
+                    </div>
+                    <div id="section9" class="section">
+                        <h3>9. Financijske kartice</h3>
+                        <p>
+                            Za prikaz Financijskih kartica kliknuti na <strong>Financijske Kartice</strong>.<br />
+                            Odabrati godinu i kliknuti na <strong>Filter</strong>.<br />
+                            Program daje ispis ukupnog prometa (mjesečno i kumulativno) za odabranu godinu i to za promet uloga, pozajmica, manipulativnih troškova, troškova održavanja računa,
+                            kamata po štednji i raznih materijalnih troškova.
+                        </p>
+                        <img class="img-responsive img-thumbnail img" src="img/help/financijskekartice.png" />
+                        <img class="img-responsive img-thumbnail img" src="img/help/financijskekarticeulozi.png" />
+                    </div>
+                    <div id="section10" class="section">
+                        <h3>10. Bilanca</h3>
+                        <p>
+                            Za pregled bilance kliknuti na <strong>Bilanca</strong>.<br />
+                            Odabrati godinu i kliknuti na <strong>Filter</strong>.<br />
+                            U tablicama su dani podaci o ukupnim prihodima, rashodima i razlici rashoda i prihoda za odabranu godinu, kao i temeljnica.
+                        </p>
+                        <img class="img-responsive img-thumbnail img" src="img/help/bilanca.png" />
+                        <img class="img-responsive img-thumbnail img" src="img/help/bilancaprihodi.png" />
                     </div>
                 </div>
             </div>
