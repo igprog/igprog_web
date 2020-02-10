@@ -1,6 +1,6 @@
 ﻿ /*!
 style.css
-(c) 2019 IG PROG, www.igprog.hr
+(c) 2019-2020 IG PROG, www.igprog.hr
 */
  html {
       height:auto;
@@ -106,6 +106,14 @@ body {
       margin-bottom: 20px;
       color:dodgerblue;
   }
+  .footer {
+    background: url("../img/banner.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  .tranparent {
+    background-color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+   }
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
@@ -265,6 +273,16 @@ header {
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
 }
+.zoom:hover .bottom-left {
+    display:block;
+}
+.zoom:hover img {
+  opacity: .3;
+}
+img {
+    transition: .5s ease;
+}
+
 /***** Portfolio box *****/
 
 /********** Sidebar **********/
@@ -333,5 +351,19 @@ header {
   padding-left: 10px;
 }
 /********** Sidebar **********/
+
+.bottom-left {
+  display:none;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-left:hover {
+  display:block;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 
 

@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: error.html
+Disallow: /error.html
+sitemap: https://www.igprog.hr/sitemap.xml
 

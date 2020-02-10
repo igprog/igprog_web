@@ -24,15 +24,13 @@
     <script src="assets/js/vendor/angular.min.js"></script>
     <script src="assets/js/vendor/angular-animate.min.js"></script>
     <script src="assets/js/vendor/angular-aria.min.js"></script>
-    <!--<link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>-->
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1" />
 
     <style>
         body {
-            /*font-family: 'Encode Sans Expanded';*/
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 16px;
             position: relative;
         }
         .banner {
@@ -44,7 +42,7 @@
 <body ng-app="app" ng-controller="appCtrl" data-spy="scroll" data-target=".navbar" data-offset="60" >
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div>
-            <img src="../assets/img/logo.png" style="height:30px" />
+            <img src="../assets/img/logo.png" style="height:30px" alt="IG PROG" />
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -96,157 +94,54 @@
                     </div>
             </div>
            
-            <div id="section2" class="container-fluid section slideanim">
+            <div id="section2" class="container-fluid section slideanim p-3">
                 <h2>Portfolio</h2>
                 <hr />
-                <div class="lead">
-                    Neki od naših dosadašnjih projekata...
+                <div>
+                    <p class="lead">Neki od naših dosadašnjih projekata...</p>
                 </div>
-                <div class="row mt-2 text-center" style="overflow: hidden;">
+
+                <div class="row" style="overflow: hidden;">
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.programprehrane.com" title="www.programprehrane.com" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/ppw.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Program Prehrane Web</h4>
-                                    <p class="card-text">Web aplikacija za nutricioniste</p>
-                                    <!--<a href="https://www.programprehrane.com">ProgramPrehrane.com</a>-->
-                                    <p>ProgramPrehrane.com</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.programprehrane.com'" product="'Program Prehrane Web'" shortdesc="'Web aplikacija za nutricioniste'" img="'../assets/img/portfolio/ppw.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <img class="card-img-top" src="../assets/img/portfolio/et.png" alt="Card image">
-                            <div class="card-body bg-light">
-                                <h4 class="card-title">Evidencija teretane</h4>
-                                <p class="card-text">Web aplikacija za evidenciju rada teretane</p>
-                                <!--<a href="https://www.programprehrane.com" class="btn btn-primary">ProgramPrehrane.com</a>-->
-                            </div>
-                        </div>
+                        <card-directive link="" product="'Evidencija teretane'" shortdesc="'Web aplikacija za evidenciju rada teretane'" img="'../assets/img/portfolio/et.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.promotextile.co.uk/" title="www.promotextile.co.uk" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/pt_gb.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Promo Textile</h4>
-                                    <p class="card-text">Web shop</p>
-                                    <p>promotextile.co.uk</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.promotextile.co.uk/'" product="'Promo Textile'" shortdesc="'Web shop'" img="'../assets/img/portfolio/pt_gb.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="kup/" title="eKup - Kasa uzajamne pomoći" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/kup.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Kasa uzajamne pomoći</h4>
-                                    <p class="card-text">Web aplikacija vođenje blagajne uzajamne pomoći</p>
-                                    <p>igprog.hr/kup</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'../kup/'" product="'eKup - Kasa uzajamne pomoći'" shortdesc="'Web aplikacija vođenje blagajne uzajamne pomoći'" img="'../assets/img/portfolio/kup.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.programprehrane.com/program-prehrane-5.html" title="eKup - Kasa uzajamne pomoći" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/pp5.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Program Prehrane 5.0</h4>
-                                    <p class="card-text">Računalni program za izradu uravnoteženih jelovnika</p>
-                                    <p>ProgramPrehrane.com</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.programprehrane.com/program-prehrane-5.html'" product="'Program Prehrane 5.0'" shortdesc="'Računalni program za izradu uravnoteženih jelovnika'" img="'../assets/img/portfolio/pp5.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <img class="card-img-top" src="../assets/img/portfolio/ek.png" alt="Card image">
-                            <div class="card-body bg-light">
-                                <h4 class="card-title">Evidencija Treninga</h4>
-                                <p class="card-text">Web aplikacija za sportske klubove</p>
-                            </div>
-                        </div>
+                        <card-directive link="" product="'Evidencija Treninga'" shortdesc="'Web aplikacija za sportske klubove'" img="'../assets/img/portfolio/ek.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.studiotanya.hr" title="studiotanya.hr" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/studiotanya.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Studio Tanya</h4>
-                                    <p class="card-text">Obrt za njegu i masažu tijela</p>
-                                    <p>studiotanya.hr</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.studiotanya.hr'" product="'Studio Tanya'" shortdesc="'Obrt za njegu i masažu tijela'" img="'../assets/img/portfolio/studiotanya.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.apartmentselvira.com" title="apartmentselvira.com" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/apartmentselvira.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Apartmani Elvira</h4>
-                                    <p class="card-text">Privatni smještaj u Brelima</p>
-                                    <p>apartmentselvira.com</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.apartmentselvira.com'" product="'Apartmani Elvira'" shortdesc="'Privatni smještaj u Brelima'" img="'../assets/img/portfolio/apartmentselvira.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.villamilibrela.com" title="villamilibrela.com" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/villamilibrela.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Villa Mili</h4>
-                                    <p class="card-text">Villa Mili Brela</p>
-                                    <p>villamilibrela.com</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.villamilibrela.com'" product="'Villa Mili'" shortdesc="'Villa Mili Brela'" img="'../assets/img/portfolio/villamilibrela.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.promo-tekstil.com/" title="promo-tekstil.com" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/promotekstil.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">promo Tekstil.com</h4>
-                                    <p class="card-text">Web shop | prodaja tekstilnih proizvoda</p>
-                                    <p>promo-tekstil.com</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.promo-tekstil.com'" product="'promo-tekstil.com'" shortdesc="'Web shop | prodaja tekstilnih proizvoda'" img="'../assets/img/portfolio/promotekstil.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.dizajn911.com" title="dizajn911.com" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/dizajn911.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Dizajn 911</h4>
-                                    <p class="card-text">Studio za uređenje interijera | Katava</p>
-                                    <p>dizajn911.com</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.dizajn911.com'" product="'Dizajn 911'" shortdesc="'Studio za uređenje interijera | Katava'" img="'../assets/img/portfolio/dizajn911.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <div class="card shadow zoom" style="min-height:450px">
-                            <a href="https://www.vistanekretnine.hr/" title="vistanekretnine.hr" style="text-decoration:none">
-                                <img class="card-img-top" src="../assets/img/portfolio/vistanekretnine.png" alt="Card image">
-                                <div class="card-body bg-light">
-                                    <h4 class="card-title">Vista Nekretnine d.o.o.</h4>
-                                    <p class="card-text">Prodaja luksuznih stanova u Opatiji</p>
-                                    <p>vistanekretnine.hr</p>
-                                </div>
-                            </a>
-                        </div>
+                        <card-directive link="'https://www.vistanekretnine.hr'" product="'Vista Nekretnine d.o.o.'" shortdesc="'Prodaja luksuznih stanova u Opatiji'" img="'../assets/img/portfolio/vistanekretnine.png'"></card-directive>
                     </div>
                 </div>
             </div>
             <div id="section3" class="container section slideanim">
-                <h2>Cijene</h2>
+                <h2 class="text-left">Cijene</h2>
                 <hr />
                 <div>
                     <p class="text-justify">
@@ -375,7 +270,7 @@
             </div>
 
             <div id="section4" class="container section slideanim">
-                <h2>O nama</h2>
+                <h2 class="text-left">O nama</h2>
                 <hr />
                 <div class="row">
                     <div class="col-md-8">
@@ -449,47 +344,49 @@
                 </div>
             </div>
         </div>
-        <div id="section5" class="container-fluid section slideanim bg-secondary text-white p-5">
-            <div class="m10">
-                Ako i Vama treba brzo i kvalitetno programsko rješenje obratite nam se s povjerenjem.
-            </div>
-            <div class="text-left">
-                <h2 class="text-white">Kontakt</h2>
-                <div ng-controller="contactCtrl" class="row">
-                    <div class="col-sm-5">
-                        <label>{{config.company}}</label>
-                        <p>OIB {{config.oib}}</p>
-                        <p><i class="fa fa-home"></i> {{config.address}}</p>
-                        <p><a href="tel:+385 98 330 966" class="text-white"><i class="fa fa-phone"></i> {{config.phone}}</a></p>
-                        <p><a href="mailto:{{config.email}}" class="text-white"><i class="far fa-envelope"></i> {{config.email}}</a></p>
-                        <p><a href="{{config.url}}" class="text-white"><i class="fa fa-globe"></i> {{config.sitename}}</a></p>
-                    </div>
-                    <div class="col-sm-7">
-                        <h3 ng-if="!showAlert">Pošaljite upit</h3>
-                        <div ng-if="showAlert" class="alert alert-success">
-                            <strong>Poruka je uspješno poslana!</strong>
-                            <p>Odgovorit ćemo Vam u najskorijem roku.</p>
+        <div id="section5" class="footer">
+            <div class="container-fluid section slideanim tranparent text-white p-5">
+                <div class="m10">
+                    Ako i Vama treba brzo i kvalitetno programsko rješenje obratite nam se s povjerenjem.
+                </div>
+                <div class="text-left">
+                    <div ng-controller="contactCtrl" class="row">
+                        <div class="col-lg-5 pt-3">
+                            <h2 class="text-white">Kontakt</h2>
+                            <label>{{config.company}}</label>
+                            <p>OIB {{config.oib}}</p>
+                            <p><i class="fa fa-home"></i> {{config.address}}</p>
+                            <p><a href="tel:+385 98 330 966" class="text-white"><i class="fa fa-phone"></i> {{config.phone}}</a></p>
+                            <p><a href="mailto:{{config.email}}" class="text-white"><i class="far fa-envelope"></i> {{config.email}}</a></p>
+                            <p><a href="{{config.url}}" class="text-white"><i class="fa fa-globe"></i> {{config.sitename}}</a></p>
                         </div>
-                        <div ng-if="!showAlert">
-                            <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <input ng-model="d.name" class="form-control" name="name" placeholder="Ime" type="text" required>
-                                </div>
-                                <div class="col-sm-6 form-group">
-                                    <input ng-model="d.email" class="form-control" name="email" placeholder="Email" type="email" required>
-                                </div>
+                        <div class="col-lg-7 pt-3">
+                            <h3 ng-if="!showAlert">Pošaljite upit</h3>
+                            <div ng-if="showAlert" class="alert alert-success">
+                                <strong>Poruka je uspješno poslana!</strong>
+                                <p>Odgovorit ćemo Vam u najskorijem roku.</p>
                             </div>
-                            <textarea ng-model="d.message" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
-                            <div class="row">
-                                <div class="col-sm-12 form-group">
-                                    <button class="btn btn-outline-light pull-right" ng-disabled="isSendButtonDisabled" ng-click="send(d)"><span ng-class="sendicon"></span> {{sendicontitle}}</button>
+                            <div ng-if="!showAlert">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <input ng-model="d.name" class="form-control" name="name" placeholder="Ime" type="text" required>
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <input ng-model="d.email" class="form-control" name="email" placeholder="Email" type="email" required>
+                                    </div>
+                                </div>
+                                <textarea ng-model="d.message" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
+                                <div class="row">
+                                    <div class="col-sm-12 form-group">
+                                        <button class="btn btn-outline-light pull-right" ng-disabled="isSendButtonDisabled" ng-click="send(d)"><span ng-class="sendicon"></span> {{sendicontitle}}</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>    
+            </div>    
+        </div>
     </div>
     
     

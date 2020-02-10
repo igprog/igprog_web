@@ -1,6 +1,6 @@
 ﻿/*!
 app.js
-(c) 2019 IG PROG, www.igprog.hr
+(c) 2019 - 2020 IG PROG, www.igprog.hr
 */
 angular.module('app', [])
 
@@ -56,5 +56,17 @@ angular.module('app', [])
 
 }])
 
+.directive('cardDirective', () => {
+    return {
+        restrict: 'E',
+        scope: {
+            link: '=',
+            product: '=',
+            shortdesc: '=',
+            img: '='
+        },
+        templateUrl: '../assets/partials/directive/card.html'
+    };
+})
 
 ;
