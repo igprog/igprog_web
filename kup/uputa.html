@@ -70,7 +70,7 @@
                                 <a class="dropdown-item" href="#section21">2.1 Novi korisnik</a>
                                 <a class="dropdown-item" href="#section22">2.2 Pretraga korisnika</a>
                                 <a class="dropdown-item" href="#section23">2.3 Kartica korisnika</a>
-                                <a class="dropdown-item" href="#section24">2.4 Ispis Kartica</a>
+                                <a class="dropdown-item" href="#section24">2.4 Ispis kartica</a>
                                 <a class="dropdown-item" href="#section25">2.5 Isčlanjenje korisnika</a>
                             </div>
                         </li>
@@ -103,6 +103,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#section10">10. Bilanca</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">11. Dodatak</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#section111">11.1 Instalacija programa PrintKUP</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <div class="col-sm-10 col-6 text-justify">
@@ -120,7 +126,7 @@
                                 <li>Valuta</li>
                                 <li>Zadani mjesečni ulog</li>
                                 <li>Manipulativni troškovi (koeficjent, za 2% koefcijent je 0.02)</li>
-                                <li>Zadani prok otplate u mjesecima</li>
+                                <li>Zadani rok otplate u mjesecima</li>
                                 <li>Šifre <strong>konta</strong> za pojedinu vrestu prometa</li>
                                 <li>Početno stanje žiro računa sa danom početka korištenja aplikacije</li>
                                 <li>Početno stanje prihoda</li>
@@ -177,8 +183,37 @@
                         <img class="img-responsive img-thumbnail img" src="img/help/karticekorisnikazip3.png" />
                         <p>Otvoriti sve foldere unutar <strong>root</strong> direktorija dok se ne dođe do <strong>PDF</strong> datoteka.</p>
                         <img class="img-responsive img-thumbnail img" src="img/help/karticekorisnikazip4.png" />
+                        <h3>2.4.1 Ispis (Metoda 1.)</h3>
                         <p>Za ispis svih kartica na printeru, označiti sve datoteke (<strong>Ctrl+A</strong>), desni klik na mišu i kliknuti na <strong>Print</strong>.</p>
                         <img class="img-responsive img-thumbnail img" src="img/help/karticekorisnikazip5.png" />
+                        <h3>2.4.2 Ispis (Metoda 2.)</h3>
+                        <div>
+                            <p>
+                                Kartice je moguće isprintati pomoću programa <strong>PrintKUP</strong>.
+                                Klikom na dugme <strong>Pretraži</strong> odaberemo putanju (<em>folder</em>) u kojemu se nalaze pozajmice (<em>PDF datoteke</em>). Poželjno je 
+                                ne stavljati sve pozajmice u jedan folder već ih odvajati npr. prema poslovnim jedinicama.
+                                Nakon što se klikne na dugme <strong>ISPIS</strong>, kartice se automatski šalju na printer jedna po jedna u razmaku od 10 sekundi.
+                                Razmak između ispisa se može smanjiti ili povećati u <strong>Postavkama</strong>. 
+                            </p>
+                            <div>
+                                <img class="img-responsive img-thumbnail img" src="img/help/printkup1.png" />
+                            </div>
+                            <p>
+                                Za rad aplikacije je potrebno imati instaliran <strong>Acrobat Reader</strong>.
+                                U postavkama mora biti definirana putanja od <strong>AcroRd32.exe</strong>.
+                            </p>
+                            <div>
+                                <img class="img-responsive img-thumbnail img" src="img/help/printkup2.png" />
+                            </div>
+                            <em class="text-danger">
+                                * Napomena: Uputa za instalaciju se nalazi u <strong>Dodatku</strong> (<a href="#section111" title="Uputa za instalaciju PrintKUP">točka: 11.1</a>).
+                            </em>
+                            <!--<em class="text-danger">
+                                * Napomena: Prije ispisa u <strong>Generalnim postavkama</strong> potrebno je upisati i spremiti lokaciju
+                                na u kojoj je instaliran <strong>Acrobat Reader</strong> (<em>Lokacija gdje se nalazi <strong>AcroRd32.exe</strong></em>) .<br />
+                            </em>-->
+                            <!--<img class="img-responsive img-thumbnail img" src="img/help/acrobatreaderpath.png" />-->
+                        </div>
                     </div>
                     <div id="section25" class="section">
                         <h3>2.5 Isčlanjenje korisnika</h3>
@@ -309,6 +344,43 @@
                         </p>
                         <img class="img-responsive img-thumbnail img" src="img/help/bilanca.png" />
                         <img class="img-responsive img-thumbnail img" src="img/help/bilancaprihodi.png" />
+                    </div>
+                    <div id="section110" class="section">
+                        <h3>11 Dodatak </h3>
+                    </div>
+                    <div id="section111" class="section">
+                        <h3>11.1 Instalacija programa <strong>PrintKUP</strong> </h3>
+                        Zip datoteku <strong>PrintKUP.zip</strong> možete pruzeti <a href="files/PrintKUP.zip" title="PrintKUP.zip">ovdje</a>.
+                        <p class="pt-3">Postupak preuzimanja:</p>
+                        <p>1. Google Chrome:</p>
+                        <div>
+                            <img class="img-responsive img-thumbnail img" src="img/help/printkupdownload1.png" />
+                        </div>
+                        <p>2. Microsoft Edge:</p>
+                        <div>
+                            <img class="img-responsive img-thumbnail img" src="img/help/downloadprintkupme1.png" />
+                        </div>
+                        <div>
+                            <img class="img-responsive img-thumbnail img" src="img/help/downloadprintkupme2.png" />
+                        </div>
+                        <p>Otvorite datoteku <strong>PrintKUP.zip</strong>, zatim dvostrukim klikom pokrenite <strong>setup.exe</strong>.</p>
+                        <div>
+                            <img class="img-responsive img-thumbnail img" src="img/help/printkupinstall3.png" />
+                        </div>
+                        <p>Kliknite na tipku <strong>Install</strong>.</p>
+                        <div>
+                            <img class="img-responsive img-thumbnail img" src="img/help/printkupinstall1.png" />
+                        </div>
+                        <div>
+                            <em class="text-danger">
+                                * Napomena: Za rad programa potrebno je imati instaliran <strong>Microsoft .NET Framework 4.0</strong>. Program će sam detektirati dali je Framework instaliran.
+                                Ako nije ponudit će vam opciju da ga instlairate.
+                            </em>
+                        </div>
+                        <p class="mt-3">Za pokretanje programa kliknuti na <strong>Search</strong> i upisati <em>printkup</em>.</p>
+                        <div>
+                            <img class="img-responsive img-thumbnail img" src="img/help/printkupinstall2.png" />
+                        </div>
                     </div>
                 </div>
             </div>
