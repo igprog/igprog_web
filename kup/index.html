@@ -10,11 +10,11 @@
 
       gtag('config', 'UA-47317436-7');
     </script>-->
+    <title>Kasa uzajamne pomoći | Web aplikacija</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Web aplikacija za vođenje kase uzajamne pomoći">
     <meta name="author" content="IG PROG, vl. Igor Gašparović">
-    <title>Kasa uzajamne pomoći | Web aplikacija</title>
     <link href="../assets/css/vendor/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -24,101 +24,116 @@
     <script src="../assets/js/vendor/angular.min.js"></script>
     <script src="../assets/js/vendor/angular-animate.min.js"></script>
     <script src="../assets/js/vendor/angular-aria.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Encode Sans Expanded';
+            font-family: 'Montserrat', sans-serif;
             font-size: 16px;
             position: relative;
         }
-        .banner {
-            background: url("img/banner.jpg") no-repeat center center;
-            background-size: cover; 
-        }
     </style>
 </head>
-<body ng-app="app" ng-controller="appCtrl" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div>
-            <!--<img src="../assets/img/logo.png" style="height:30px" />-->
-            <label style="font-size:24px"><em>e</em>KUP <span class="small">Kasa uzajamne pomoći</span></label>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
+<body ng-app="app" ng-controller="appCtrl" data-spy="scroll" data-target=".navbar" data-offset="60" >
+    <nav class="navbar navbar-expand-lg bg-white container">
+        <a href="./" title="KUP">
+            <img src="img/logo.png" style="height:30px" alt="KUP" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" >
+                <i class="fas fa-bars" style="color:#000; font-size:28px;"></i>
+            </span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#section1">Specifikacija</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="uputa.html">Uputa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section5">Kontakt</a>
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center banner">
-        <div class="container text-center" style="padding:80px 0 20px 0">
-            <h1 style="font-size:46px">Web Aplikacija za vođenje kase uzajamne pomoći</h1>
-        </div>
-        <div style="font-size:26px; padding-bottom:80px">
-            <a href="#section5" class="btn btn-primary text-uppercase m-2" style="width:280px; background-color:#0186ff" title="pošaljite upit"><i class="fa fa-check fa-2x"></i> Pošaljite upit</a>
-            <a href="tel:{{config.phone}}" class="btn btn-light m-2" style="width:280px; color:#0186ff" title="telefon"><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>
-        </div>
-    </header>
-    <div>
-        <div id="section1" class="container section text-center">
-            <div>
-                <h2>Sprecifikacija</h2>
-                <div class="row">
-                    <div class="col-md-6 mx-auto">
-                        <ul class="list-group">
-                            <li class="list-group-item"><label>Evidencija korisnika</label></li>
-                            <li class="list-group-item"><label>Evidencija pozajmica</label></li>
-                            <li class="list-group-item"><label>Uplate uloga</label></li>
-                            <li class="list-group-item"><label>Otplate pozajmica</label></li>
-                            <li class="list-group-item"><label>Kartica korisnika</label></li>
-                            <li class="list-group-item"><label>Mjesečne isplate</label></li>
-                            <li class="list-group-item"><label>Financijske kartice</label></li>
-                            <li class="list-group-item"><label>Temeljnice</label></li>
-                            <li class="list-group-item"><label>Izvještaji</label></li>
-                            <li class="list-group-item"><label>Bilanca</label></li>
-                        </ul>
+    <div class="text-center bg-light p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 p-4">
+                    <h1 style="font-size:40px">Kasa Uzajamne Pomoći</h1>
+                    <h2>Web aplikacija</h2>
+                    <div style="font-size:26px">
+                        <a href="#kontakt" class="btn btn-primary text-uppercase m-2" style="width:280px" title="pošaljite upit"><i class="fa fa-envelope fa-2x"></i> Pošaljite upit</a>
+                        <a href="tel:{{config.phone}}" class="btn btn-primary m-2" style="width:280px" title="telefon" ng-cloak><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-5 mb-5 text-center">
+
+    </div>
+    <div class="pt-5">
+        <div class="container">
+            <p>Aplikacija omogućava <em>online</em> vođenje kase <em>(blagajne)</em> uzajamne pomoći, vođenje podataka o članovima, pregled obustava na plaći, pregled kartica korisnika i drugih knjigovodstvenih podataka.
+            <br />
+            Ovo programsko rješenje moguće je prilagoditi svakom klijentu ovisno o specifičnim potrebama ili posebnim uvjetima iz pravlinika o radu blagajne uzajamne pomoći.
+            </p>
             <div class="row">
-                <div class="col-sm-4 zoom" style="padding:0;margin:0">
-                    <img class="img-fluid" src="./img/kup/01.png" alt="kup">
+                <div class="col-sm-4">
+                    <label><strong>Sprecifikacija aplikacije:</strong></label>
+                    <ul>
+                        <li><label>Evidencija korisnika</label></li>
+                        <li><label>Evidencija pozajmica</label></li>
+                        <li><label>Uplate uloga</label></li>
+                        <li><label>Otplate pozajmica</label></li>
+                        <li><label>Kartica korisnika</label></li>
+                        <li><label>Mjesečne isplate</label></li>
+                        <li><label>Financijske kartice</label></li>
+                        <li><label>Temeljnice</label></li>
+                        <li><label>Izvještaji</label></li>
+                        <li><label>Bilanca</label></li>
+                    </ul>
                 </div>
-                <div class="col-sm-4 zoom" style="padding:0;margin:0">
-                    <img class="img-fluid" src="./img/kup/02.png" alt="kup">
+                <div class="col-sm-8 text-center pt-5">
+                    <img class="img-fluid" src="./img/kup-mockup.png" alt="kup">
                 </div>
-                <div class="col-sm-4 zoom" style="padding:0;margin:0">
-                    <img class="img-fluid" src="./img/kup/03.png" alt="kup">
+            </div>
+            <p>
+                Za više informacija o aplikaciji pošaljite upit na <a href="mailto:{{config.email}}" title="{{config.email}}" ng-cloak> {{config.email}}</a>
+            </p>
+            <hr />
+        </div>
+        <div class="container p-5">
+            <div>
+                <a href="uputa.html" title="KUP - uputa za korištenje">UPUTA ZA KORIŠTENJE</a>
+            </div>
+            <div>
+                <a href="https://kupdemo.igprog.hr" title="kupdemo.igprog.hr">DEMO</a>
+                <em>* Pristupne podatke za demo verziju zatražite na <a href="mailto:{{config.email}}" title="{{config.email}}" ng-cloak> {{config.email}}</a></em>
+            </div>
+        </div>
+        <div class="container mt-5 mb-5 text-center">
+            <div class="row">
+                <div class="col-sm-4 p-2">
+                    <img class="img-fluid shadow" src="./img/kup/01.png" alt="kup">
                 </div>
-                <div class="col-sm-4 zoom" style="padding:0;margin:0">
-                    <img class="img-fluid" src="./img/kup/04.png" alt="kup">
+                <div class="col-sm-4 p-2">
+                    <img class="img-fluid shadow" src="./img/kup/02.png" alt="kup">
                 </div>
-                <div class="col-sm-4 zoom" style="padding:0;margin:0">
-                    <img class="img-fluid" src="./img/kup/05.png" alt="kup">
+                <div class="col-sm-4 p-2">
+                    <img class="img-fluid shadow" src="./img/kup/03.png" alt="kup">
                 </div>
-                <div class="col-sm-4 zoom" style="padding:0;margin:0">
-                    <img class="img-fluid" src="./img/kup/06.png" alt="kup">
+                <div class="col-sm-4 p-2">
+                    <img class="img-fluid shadow" src="./img/kup/04.png" alt="kup">
+                </div>
+                <div class="col-sm-4 p-2">
+                    <img class="img-fluid shadow" src="./img/kup/05.png" alt="kup">
+                </div>
+                <div class="col-sm-4 p-2">
+                    <img class="img-fluid shadow" src="./img/kup/06.png" alt="kup">
                 </div>
             </div>
         </div>
-        <div class="container p-5 text-center center">
-            <hr />
-            <a href="uputa.html" class="btn btn-primary" title="KUP - uputa za korištenje">UPUTA ZA KORIŠTENJE</a>
-        </div>
-        <div id="section5" class="container-fluid section bg-secondary text-white p-5">
+
+        <div id="kontakt" class="container-fluid section bg-dark text-white p-5">
             <h2 class="text-white">Kontakt</h2>
             <div ng-controller="contactCtrl" class="row">
                 <div class="col-sm-5">
@@ -129,7 +144,7 @@
                     <p><a href="mailto:{{config.email}}" class="text-white"><i class="far fa-envelope"></i> {{config.email}}</a></p>
                     <p><a href="{{config.url}}" class="text-white"><i class="fa fa-globe"></i> {{config.sitename}}</a></p>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-sm-4">
                     <h3 ng-if="!showAlert">Pošaljite upit</h3>
                     <div ng-if="showAlert" class="alert alert-success">
                         <strong>Poruka je uspješno poslana!</strong>
