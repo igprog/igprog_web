@@ -39,6 +39,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="#cijena">Cijena</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="uputa.html">Uputa</a>
                 </li>
                 <li class="nav-item">
@@ -65,66 +68,115 @@
     </div>
     <div class="pt-5">
         <div class="container">
-            <p>Aplikacija omogućava <em>online</em> vođenje kase <em>(blagajne)</em> uzajamne pomoći, vođenje podataka o članovima, pregled obustava na plaći, pregled kartica korisnika i drugih knjigovodstvenih podataka.
-            <br />
-            Ovo programsko rješenje moguće je prilagoditi svakom klijentu ovisno o specifičnim potrebama ili posebnim uvjetima iz pravlinika o radu blagajne uzajamne pomoći.
-            </p>
-            <div class="row">
-                <div class="col-sm-4">
-                    <label><strong>Sprecifikacija aplikacije:</strong></label>
-                    <ul>
-                        <li><label>Evidencija korisnika</label></li>
-                        <li><label>Evidencija pozajmica</label></li>
-                        <li><label>Uplate uloga</label></li>
-                        <li><label>Otplate pozajmica</label></li>
-                        <li><label>Kartica korisnika</label></li>
-                        <li><label>Mjesečne isplate</label></li>
-                        <li><label>Financijske kartice</label></li>
-                        <li><label>Temeljnice</label></li>
-                        <li><label>Izvještaji</label></li>
-                        <li><label>Bilanca</label></li>
-                    </ul>
-                </div>
-                <div class="col-sm-8 text-center pt-5">
-                    <img class="img-fluid" src="./img/kup-mockup.png" alt="kup">
-                </div>
-            </div>
-            <p>
-                Za više informacija o aplikaciji pošaljite upit na <a href="mailto:{{config.email}}" title="{{config.email}}" ng-cloak> {{config.email}}</a>
-            </p>
-            <hr />
-        </div>
-        <div class="container p-5">
             <div>
-                <a href="uputa.html" title="KUP - uputa za korištenje">UPUTA ZA KORIŠTENJE</a>
+                <p>
+                    Aplikacija omogućava <em>online</em> vođenje kase <em>(blagajne)</em> uzajamne pomoći, vođenje podataka o članovima, pregled obustava na plaći, pregled kartica korisnika i drugih knjigovodstvenih podataka.
+                    <br />
+                    Ovo programsko rješenje moguće je prilagoditi svakom klijentu ovisno o specifičnim potrebama ili posebnim uvjetima iz pravlinika o radu blagajne uzajamne pomoći.
+                </p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label><strong>Sprecifikacija aplikacije:</strong></label>
+                        <ul>
+                            <li><label>Evidencija korisnika</label></li>
+                            <li><label>Evidencija pozajmica</label></li>
+                            <li><label>Uplate uloga</label></li>
+                            <li><label>Otplate pozajmica</label></li>
+                            <li><label>Kartica korisnika</label></li>
+                            <li><label>Mjesečne isplate</label></li>
+                            <li><label>Financijske kartice</label></li>
+                            <li><label>Temeljnice</label></li>
+                            <li><label>Izvještaji</label></li>
+                            <li><label>Bilanca</label></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 text-center pt-5">
+                        <img class="img-fluid" src="./img/kup-mockup.png" alt="kup">
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="https://kupdemo.igprog.hr" title="kupdemo.igprog.hr">DEMO</a>
-                <em>* Pristupne podatke za demo verziju zatražite na <a href="mailto:{{config.email}}" title="{{config.email}}" ng-cloak> {{config.email}}</a></em>
+            <div id="cijena" class="text-center pt-5">
+                <h2>Cijena</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card zoom" style="padding:0">
+                            <div class="card-header">
+                                <h3>PEKET 200</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Broj korisnika: <strong>do 200</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <h4><strong>200.00 kn</strong> / mjesečno</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card zoom" style="padding:0">
+                            <div class="card-header">
+                                <h3>PEKET 500</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Broj korisnika: <strong>do 500</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <h4><strong>300.00 kn</strong> / mjesečno</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card zoom" style="padding:0">
+                            <div class="card-header">
+                                <h3>PEKET 500+</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Broj korisnika: <strong>preko 500</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <h4><strong>400.00 kn</strong> / mjesečno</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5">
+                <div>
+                    <a href="uputa.html" title="KUP - uputa za korištenje">UPUTA ZA KORIŠTENJE</a>
+                </div>
+                <div>
+                    <a href="https://kupdemo.igprog.hr" title="kupdemo.igprog.hr">DEMO VERZIJA</a>
+                    <em>* Pristupne podatke za demo verziju zatražite na <a href="mailto:{{config.email}}" title="{{config.email}}" ng-cloak> {{config.email}}</a></em>
+                </div>
+                <p class="pt-3">
+                    Za više informacija o aplikaciji pošaljite upit na <a href="mailto:{{config.email}}" title="{{config.email}}" ng-cloak> {{config.email}}</a>
+                </p>
+            </div>
+            <div class="mt-5 mb-5 text-center">
+                <div class="row">
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid shadow" src="./img/kup/01.png" alt="kup">
+                    </div>
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid shadow" src="./img/kup/02.png" alt="kup">
+                    </div>
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid shadow" src="./img/kup/03.png" alt="kup">
+                    </div>
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid shadow" src="./img/kup/04.png" alt="kup">
+                    </div>
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid shadow" src="./img/kup/05.png" alt="kup">
+                    </div>
+                    <div class="col-sm-4 p-2">
+                        <img class="img-fluid shadow" src="./img/kup/06.png" alt="kup">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container mt-5 mb-5 text-center">
-            <div class="row">
-                <div class="col-sm-4 p-2">
-                    <img class="img-fluid shadow" src="./img/kup/01.png" alt="kup">
-                </div>
-                <div class="col-sm-4 p-2">
-                    <img class="img-fluid shadow" src="./img/kup/02.png" alt="kup">
-                </div>
-                <div class="col-sm-4 p-2">
-                    <img class="img-fluid shadow" src="./img/kup/03.png" alt="kup">
-                </div>
-                <div class="col-sm-4 p-2">
-                    <img class="img-fluid shadow" src="./img/kup/04.png" alt="kup">
-                </div>
-                <div class="col-sm-4 p-2">
-                    <img class="img-fluid shadow" src="./img/kup/05.png" alt="kup">
-                </div>
-                <div class="col-sm-4 p-2">
-                    <img class="img-fluid shadow" src="./img/kup/06.png" alt="kup">
-                </div>
-            </div>
-        </div>
+
+      
 
         <div id="kontakt" class="container-fluid section bg-dark text-white p-5">
             <h2 class="text-white">Kontakt</h2>
