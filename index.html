@@ -42,19 +42,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section1">Usluge</a>
+                    <a class="nav-link font-weight-bold" href="#usluge">Usluge</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section2">Portfolio</a>
+                    <a class="nav-link font-weight-bold" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section3">Cijene</a>
+                    <a class="nav-link font-weight-bold" href="#cijene">Cijene</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section4">O nama</a>
+                    <a class="nav-link font-weight-bold" href="#o-nama">O nama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section5">Kontakt</a>
+                    <a class="nav-link font-weight-bold" href="#kontakt">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -68,11 +68,11 @@
             </div>
             <div style="font-size:26px; padding-bottom:80px">
                 <a href="#section5" class="btn btn-primary text-uppercase m-2" style="width:280px; background-color:#0186ff" title="pošaljite upit"><i class="fa fa-check fa-2x"></i> Pošaljite upit</a>
-                <a href="tel:{{config.phone}}" class="btn btn-light m-2" style="width:280px; color:#0186ff" title="telefon"><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>
+                <a href="tel:{{config.phone}}" class="btn btn-light m-2" style="width:280px; color:#0186ff" title="telefon" ng-cloak><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>
             </div>
         </header>
         <div class="p-3">
-            <div id="section1" class="container section slideanim">
+            <div id="usluge" class="container section slideanim">
                     <div>
                         <h2>Usluge</h2>
                         <hr />
@@ -85,8 +85,83 @@
                         <h2 style="font-size:20px; display:inline">AddWords kampanja</h2>
                     </div>
             </div>
+
+            <div id="o-nama" class="container section slideanim">
+                <h2 class="text-left">O nama</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="text-justify">
+                            Obrt za računalno programiranje IG PROG bavi se izradom custom aplikacija, suradnjom sa drugim IT kompanijama i prodajom gotovih programskih rješenja.
+                            Klijentima nudimo kompletnu uslugu, od analize, dizajna, programskog rješenja, smještaja stranice na server do održavanja i tehničke podrške.
+                        </p>
+                        <p>Za razvoj aplikacija koristimo najnovije tehnologije:</p>
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="96px" height="96px">
+                                <g id="surface1">
+                                    <path style=" fill:#E65100;" d="M 41 5 L 7 5 L 10 39 L 24 43 L 38 39 Z " />
+                                    <path style=" fill:#FF6D00;" d="M 24 8 L 24 39.898438 L 35.199219 36.699219 L 37.699219 8 Z " />
+                                    <path style=" fill:#FFFFFF;" d="M 24 25 L 24 21 L 32.601563 21 L 31.898438 32.5 L 24 35.101563 L 24 30.898438 L 28.101563 29.5 L 28.398438 25 Z M 32.898438 17 L 33.199219 13 L 24 13 L 24 17 Z " />
+                                    <path style=" fill:#EEEEEE;" d="M 24 30.898438 L 24 35.101563 L 16.101563 32.5 L 15.699219 27 L 19.699219 27 L 19.898438 29.5 Z M 19.101563 17 L 24 17 L 24 13 L 14.898438 13 L 15.601563 25 L 24 25 L 24 21 L 19.398438 21 Z " />
+                                </g>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="96px" height="96px">
+                                <g id="surface1">
+                                    <path style=" fill-rule:evenodd;fill:#37474F;" d="M 22.902344 3.285156 C 23.582031 2.90625 24.417969 2.90625 25.097656 3.285156 C 28.449219 5.167969 38.546875 10.835938 41.902344 12.71875 C 42.582031 13.101563 43 13.804688 43 14.566406 C 43 18.332031 43 29.667969 43 33.433594 C 43 34.195313 42.582031 34.898438 41.902344 35.28125 C 38.546875 37.164063 28.453125 42.832031 25.097656 44.714844 C 24.417969 45.09375 23.582031 45.09375 22.902344 44.714844 C 19.546875 42.832031 9.453125 37.164063 6.097656 35.28125 C 5.417969 34.898438 5 34.195313 5 33.433594 C 5 29.667969 5 18.332031 5 14.566406 C 5 13.804688 5.417969 13.101563 6.097656 12.71875 C 9.449219 10.835938 19.550781 5.167969 22.902344 3.285156 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#546E7A;" d="M 5.304688 34.402344 C 5.039063 34.046875 5 33.710938 5 33.253906 C 5 29.511719 5 18.242188 5 14.496094 C 5 13.738281 5.417969 13.039063 6.09375 12.660156 C 9.4375 10.789063 19.5 5.152344 22.84375 3.28125 C 23.519531 2.902344 24.4375 2.910156 25.113281 3.289063 C 28.457031 5.160156 38.484375 10.746094 41.828125 12.617188 C 42.097656 12.769531 42.304688 12.953125 42.488281 13.195313 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 24 10 C 31.726563 10 38 16.273438 38 24 C 38 31.726563 31.726563 38 24 38 C 16.273438 38 10 31.726563 10 24 C 10 16.273438 16.273438 10 24 10 Z M 24 17 C 27.863281 17 31 20.136719 31 24 C 31 27.863281 27.863281 31 24 31 C 20.136719 31 17 27.863281 17 24 C 17 20.136719 20.136719 17 24 17 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#455A64;" d="M 42.484375 13.203125 C 43 13.6875 42.992188 14.414063 42.992188 14.988281 C 42.992188 18.785156 42.960938 29.578125 43 33.371094 C 43.003906 33.769531 42.871094 34.1875 42.675781 34.5 L 23.59375 24 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 34 20 L 35 20 L 35 28 L 34 28 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 37 20 L 38 20 L 38 28 L 37 28 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 32 25 L 40 25 L 40 26 L 32 26 Z " />
+                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 32 22 L 40 22 L 40 23 L 32 23 Z " />
+                                </g>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
+                            <path style="fill:#673AB7;" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5  V37z" />
+                            <path style="fill:#FFFFFF;" d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18  c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3  C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75  c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z" />
+                        </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
+                            <polygon style="fill:#BDBDBD;" points="23.933,2 3,9.285 6.308,36.408 23.955,46 41.693,36.278 45,9.156 " />
+                            <polygon style="fill:#B71C1C;" points="42.818,10.527 24,4.135 24,43.695 39.832,35.017 " />
+                            <polygon style="fill:#DD2C00;" points="23.941,4.115 5.181,10.644 8.168,35.143 23.951,43.721 24,43.695 24,4.135 " />
+                            <polygon style="fill:#BDBDBD;" points="24,5.996 24,15.504 32.578,34 36.987,34 " />
+                            <polygon style="fill:#EEEEEE;" points="11.013,34 15.422,34 24,15.504 24,5.996 " />
+                            <rect x="24" y="24" style="fill:#BDBDBD;" width="6" height="4" />
+                            <rect x="18" y="24" style="fill:#EEEEEE;" width="6" height="4" />
+                        </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
+                            <g id="surface1">
+                            <path style="fill:#7CB342;" d="M12,29c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V29z" />
+                            <path style="fill:#7CB342;" d="M40,29c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V29z" />
+                            <path style="fill:#7CB342;" d="M22,40c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V40z" />
+                            <path style="fill:#7CB342;" d="M30,40c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V40z" />
+                            <path style="fill:#7CB342;" d="M14,18v15c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V18H14z" />
+                            <path style="fill:#7CB342;" d="M24,8c-6,0-9.7,3.6-10,8h20C33.7,11.6,30,8,24,8z M20,13.6c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1   s1,0.4,1,1C21,13.1,20.6,13.6,20,13.6z M28,13.6c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1C29,13.1,28.6,13.6,28,13.6z" />
+                            <path style="fill:#7CB342;" d="M28.3,10.5c-0.2,0-0.4-0.1-0.6-0.2c-0.5-0.3-0.6-0.9-0.3-1.4l1.7-2.5c0.3-0.5,0.9-0.6,1.4-0.3   c0.5,0.3,0.6,0.9,0.3,1.4l-1.7,2.5C29,10.3,28.7,10.5,28.3,10.5z" />
+                            <path style="fill:#7CB342;" d="M19.3,10.1c-0.3,0-0.7-0.2-0.8-0.5l-1.3-2.1c-0.3-0.5-0.2-1.1,0.3-1.4c0.5-0.3,1.1-0.2,1.4,0.3   l1.3,2.1c0.3,0.5,0.2,1.1-0.3,1.4C19.7,10,19.5,10.1,19.3,10.1z" />
+                            </g>
+                        </svg>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/program_prehrane_web.jpg" alt="Program Prehrane Web" class="img-fluid rounded" />
+                    </div>
+                </div>
+                <div class="text-justify">
+                    IG PROG je osnovan 2012 g sa primarnim ciljem razvoja softvera za nutricioniste <a href="https://www.programprehrane.com" title="Program Prehrane">Program Prehrane</a>.
+                    Od prve verzije računalnog programa iz 2008 g, razvijenog u Visual Basic 4, pa do danas, program se razvio u modernu web aplikaciju sa preko 400 zadovoljnih korisnika iz Hrvatske i zemalja regije.
+                    Program Prehrane je dobitnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija. Više o programu pogledajte <a href="https://www.programprehrane.com" title="Program Prehrane">ovdje...</a><br />
+                    Tijekom proteklih godina IG PROG je razvio i druga programska rješenja za komercijalnu primjenu kao što su, aplikaciju za praćenje rada teretane,
+                    aplikaciju za vođenje energetskih pregleda i evidenciju energetskih certifikata, aplikaciju za evidenciju članova i treninga u sportskim klubovima i aplikacija za vođenje kase uzajamne pomoći.
+                </div>
+            </div>
            
-            <div id="section2" class="container-fluid section slideanim p-3">
+            <div id="portfolio" class="container-fluid section slideanim p-3">
                 <h2>Portfolio</h2>
                 <hr />
                 <div>
@@ -95,25 +170,16 @@
 
                 <div class="row" style="overflow: hidden;">
                     <div class="col-lg-3 p-2">
-                        <card-directive link="'https://www.programprehrane.com'" product="'Program Prehrane Web'" shortdesc="'Web aplikacija za nutricioniste'" img="'../assets/img/portfolio/ppw.png'"></card-directive>
-                    </div>
-                    <div class="col-lg-3 p-2">
-                        <card-directive link="" product="'Evidencija teretane'" shortdesc="'Web aplikacija za evidenciju rada teretane'" img="'../assets/img/portfolio/et.png'"></card-directive>
-                    </div>
-                    <div class="col-lg-3 p-2">
-                        <card-directive link="'https://www.promotextile.co.uk/'" product="'Promo Textile'" shortdesc="'Web shop'" img="'../assets/img/portfolio/pt_gb.png'"></card-directive>
-                    </div>
-                    <div class="col-lg-3 p-2">
-                        <card-directive link="'../kup/'" product="'eKup - Kasa uzajamne pomoći'" shortdesc="'Web aplikacija vođenje blagajne uzajamne pomoći'" img="'../assets/img/portfolio/kup.png'"></card-directive>
-                    </div>
-                    <div class="col-lg-3 p-2">
-                        <card-directive link="'https://www.programprehrane.com/program-prehrane-5.html'" product="'Program Prehrane 5.0'" shortdesc="'Računalni program za izradu uravnoteženih jelovnika'" img="'../assets/img/portfolio/pp5.png'"></card-directive>
-                    </div>
-                    <div class="col-lg-3 p-2">
-                        <card-directive link="" product="'Evidencija Treninga'" shortdesc="'Web aplikacija za sportske klubove'" img="'../assets/img/portfolio/ek.png'"></card-directive>
+                        <card-directive link="'https://www.vistanekretnine.hr'" product="'Vista Nekretnine d.o.o.'" shortdesc="'Prodaja luksuznih stanova u Opatiji'" img="'../assets/img/portfolio/vistanekretnine.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
                         <card-directive link="'https://www.studiotanya.hr'" product="'Studio Tanya'" shortdesc="'Obrt za njegu i masažu tijela'" img="'../assets/img/portfolio/studiotanya.png'"></card-directive>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <card-directive link="'https://www.dizajn911.com'" product="'Dizajn 911'" shortdesc="'Studio za uređenje interijera | Katava'" img="'../assets/img/portfolio/dizajn911.png'"></card-directive>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <card-directive link="'https://www.promo-tekstil.com'" product="'promo-tekstil.com'" shortdesc="'Web shop | prodaja tekstilnih proizvoda'" img="'../assets/img/portfolio/promotekstil.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
                         <card-directive link="'https://www.apartmentselvira.com'" product="'Apartmani Elvira'" shortdesc="'Privatni smještaj u Brelima'" img="'../assets/img/portfolio/apartmentselvira.png'"></card-directive>
@@ -122,17 +188,27 @@
                         <card-directive link="'https://www.villamilibrela.com'" product="'Villa Mili'" shortdesc="'Villa Mili Brela'" img="'../assets/img/portfolio/villamilibrela.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <card-directive link="'https://www.promo-tekstil.com'" product="'promo-tekstil.com'" shortdesc="'Web shop | prodaja tekstilnih proizvoda'" img="'../assets/img/portfolio/promotekstil.png'"></card-directive>
+                        <card-directive link="'https://www.programprehrane.com'" product="'Program Prehrane Web'" shortdesc="'Web aplikacija za nutricioniste'" img="'../assets/img/portfolio/ppw.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <card-directive link="'https://www.dizajn911.com'" product="'Dizajn 911'" shortdesc="'Studio za uređenje interijera | Katava'" img="'../assets/img/portfolio/dizajn911.png'"></card-directive>
+                        <card-directive link="'../kup/'" product="'eKup - Kasa uzajamne pomoći'" shortdesc="'Web aplikacija vođenje blagajne uzajamne pomoći'" img="'../assets/img/portfolio/kup.png'"></card-directive>
                     </div>
                     <div class="col-lg-3 p-2">
-                        <card-directive link="'https://www.vistanekretnine.hr'" product="'Vista Nekretnine d.o.o.'" shortdesc="'Prodaja luksuznih stanova u Opatiji'" img="'../assets/img/portfolio/vistanekretnine.png'"></card-directive>
+                        <card-directive link="" product="'Evidencija teretane'" shortdesc="'Web aplikacija za evidenciju rada teretane'" img="'../assets/img/portfolio/et.png'"></card-directive>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <card-directive link="" product="'Evidencija Treninga'" shortdesc="'Web aplikacija za sportske klubove'" img="'../assets/img/portfolio/ek.png'"></card-directive>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <card-directive link="'https://www.programprehrane.com/program-prehrane-5.html'" product="'Program Prehrane 5.0'" shortdesc="'Računalni program za izradu uravnoteženih jelovnika'" img="'../assets/img/portfolio/pp5.png'"></card-directive>
+                    </div>
+                    <div class="col-lg-3 p-2">
+                        <card-directive link="" product="'Energetski pregledi'" shortdesc="'Web aplikacija za vogenje evidencije energetskih pregleda'" img="'../assets/img/portfolio/energetskipregledi.png'"></card-directive>
                     </div>
                 </div>
             </div>
-            <div id="section3" class="container section slideanim">
+
+            <div id="cijene" class="container section slideanim">
                 <h2 class="text-left">Cijene</h2>
                 <hr />
                 <div>
@@ -259,85 +335,12 @@
                     </div>
 
                 </div>
+                <p class="text-left">* <em>Članovi <a href="https://obrtnici-rijeka.hr" title="Udruženje obrtnika Rijeka" >udruženja obrtnika Rijeka</a> imaju pravo na dodatni <a href="https://obrtnici-rijeka.hr/2020/02/ig-prog-novi-partner-u-zajednickoj-nabavi" title="IG PROG – partner u Zajedničkoj nabavi">popust</a> u iznosu od 25%</em>.</p>
             </div>
 
-            <div id="section4" class="container section slideanim">
-                <h2 class="text-left">O nama</h2>
-                <hr />
-                <div class="row">
-                    <div class="col-md-8">
-                        <p class="text-justify">
-                            Obrt za računalno programiranje IG PROG osnovan je 2012 g, a bavi se izradom custom aplikacija, suradnjom sa drugim IT kompanijama i prodajom gotovih programskih rješenja.
-                            Klijentima nudimo kompletnu uslugu, od analize, dizajna, programskog rješenja, smještaja stranice na server do održavanja i tehničke podrške.
-                        </p>
-                        <p>Za razvoj aplikacija koristimo najnovije tehnologije:</p>
-                        <div class="text-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="96px" height="96px">
-                                <g id="surface1">
-                                    <path style=" fill:#E65100;" d="M 41 5 L 7 5 L 10 39 L 24 43 L 38 39 Z " />
-                                    <path style=" fill:#FF6D00;" d="M 24 8 L 24 39.898438 L 35.199219 36.699219 L 37.699219 8 Z " />
-                                    <path style=" fill:#FFFFFF;" d="M 24 25 L 24 21 L 32.601563 21 L 31.898438 32.5 L 24 35.101563 L 24 30.898438 L 28.101563 29.5 L 28.398438 25 Z M 32.898438 17 L 33.199219 13 L 24 13 L 24 17 Z " />
-                                    <path style=" fill:#EEEEEE;" d="M 24 30.898438 L 24 35.101563 L 16.101563 32.5 L 15.699219 27 L 19.699219 27 L 19.898438 29.5 Z M 19.101563 17 L 24 17 L 24 13 L 14.898438 13 L 15.601563 25 L 24 25 L 24 21 L 19.398438 21 Z " />
-                                </g>
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="96px" height="96px">
-                                <g id="surface1">
-                                    <path style=" fill-rule:evenodd;fill:#37474F;" d="M 22.902344 3.285156 C 23.582031 2.90625 24.417969 2.90625 25.097656 3.285156 C 28.449219 5.167969 38.546875 10.835938 41.902344 12.71875 C 42.582031 13.101563 43 13.804688 43 14.566406 C 43 18.332031 43 29.667969 43 33.433594 C 43 34.195313 42.582031 34.898438 41.902344 35.28125 C 38.546875 37.164063 28.453125 42.832031 25.097656 44.714844 C 24.417969 45.09375 23.582031 45.09375 22.902344 44.714844 C 19.546875 42.832031 9.453125 37.164063 6.097656 35.28125 C 5.417969 34.898438 5 34.195313 5 33.433594 C 5 29.667969 5 18.332031 5 14.566406 C 5 13.804688 5.417969 13.101563 6.097656 12.71875 C 9.449219 10.835938 19.550781 5.167969 22.902344 3.285156 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#546E7A;" d="M 5.304688 34.402344 C 5.039063 34.046875 5 33.710938 5 33.253906 C 5 29.511719 5 18.242188 5 14.496094 C 5 13.738281 5.417969 13.039063 6.09375 12.660156 C 9.4375 10.789063 19.5 5.152344 22.84375 3.28125 C 23.519531 2.902344 24.4375 2.910156 25.113281 3.289063 C 28.457031 5.160156 38.484375 10.746094 41.828125 12.617188 C 42.097656 12.769531 42.304688 12.953125 42.488281 13.195313 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 24 10 C 31.726563 10 38 16.273438 38 24 C 38 31.726563 31.726563 38 24 38 C 16.273438 38 10 31.726563 10 24 C 10 16.273438 16.273438 10 24 10 Z M 24 17 C 27.863281 17 31 20.136719 31 24 C 31 27.863281 27.863281 31 24 31 C 20.136719 31 17 27.863281 17 24 C 17 20.136719 20.136719 17 24 17 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#455A64;" d="M 42.484375 13.203125 C 43 13.6875 42.992188 14.414063 42.992188 14.988281 C 42.992188 18.785156 42.960938 29.578125 43 33.371094 C 43.003906 33.769531 42.871094 34.1875 42.675781 34.5 L 23.59375 24 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 34 20 L 35 20 L 35 28 L 34 28 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 37 20 L 38 20 L 38 28 L 37 28 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 32 25 L 40 25 L 40 26 L 32 26 Z " />
-                                    <path style=" fill-rule:evenodd;fill:#FFFFFF;" d="M 32 22 L 40 22 L 40 23 L 32 23 Z " />
-                                </g>
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
-                            <path style="fill:#673AB7;" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5  V37z" />
-                            <path style="fill:#FFFFFF;" d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18  c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3  C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75  c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z" />
-                        </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
-                            <polygon style="fill:#BDBDBD;" points="23.933,2 3,9.285 6.308,36.408 23.955,46 41.693,36.278 45,9.156 " />
-                            <polygon style="fill:#B71C1C;" points="42.818,10.527 24,4.135 24,43.695 39.832,35.017 " />
-                            <polygon style="fill:#DD2C00;" points="23.941,4.115 5.181,10.644 8.168,35.143 23.951,43.721 24,43.695 24,4.135 " />
-                            <polygon style="fill:#BDBDBD;" points="24,5.996 24,15.504 32.578,34 36.987,34 " />
-                            <polygon style="fill:#EEEEEE;" points="11.013,34 15.422,34 24,15.504 24,5.996 " />
-                            <rect x="24" y="24" style="fill:#BDBDBD;" width="6" height="4" />
-                            <rect x="18" y="24" style="fill:#EEEEEE;" width="6" height="4" />
-                        </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="96px" height="96px">
-                            <g id="surface1">
-                            <path style="fill:#7CB342;" d="M12,29c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V29z" />
-                            <path style="fill:#7CB342;" d="M40,29c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V29z" />
-                            <path style="fill:#7CB342;" d="M22,40c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V40z" />
-                            <path style="fill:#7CB342;" d="M30,40c0,1.1-0.9,2-2,2s-2-0.9-2-2v-9c0-1.1,0.9-2,2-2s2,0.9,2,2V40z" />
-                            <path style="fill:#7CB342;" d="M14,18v15c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V18H14z" />
-                            <path style="fill:#7CB342;" d="M24,8c-6,0-9.7,3.6-10,8h20C33.7,11.6,30,8,24,8z M20,13.6c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1   s1,0.4,1,1C21,13.1,20.6,13.6,20,13.6z M28,13.6c-0.6,0-1-0.4-1-1c0-0.6,0.4-1,1-1s1,0.4,1,1C29,13.1,28.6,13.6,28,13.6z" />
-                            <path style="fill:#7CB342;" d="M28.3,10.5c-0.2,0-0.4-0.1-0.6-0.2c-0.5-0.3-0.6-0.9-0.3-1.4l1.7-2.5c0.3-0.5,0.9-0.6,1.4-0.3   c0.5,0.3,0.6,0.9,0.3,1.4l-1.7,2.5C29,10.3,28.7,10.5,28.3,10.5z" />
-                            <path style="fill:#7CB342;" d="M19.3,10.1c-0.3,0-0.7-0.2-0.8-0.5l-1.3-2.1c-0.3-0.5-0.2-1.1,0.3-1.4c0.5-0.3,1.1-0.2,1.4,0.3   l1.3,2.1c0.3,0.5,0.2,1.1-0.3,1.4C19.7,10,19.5,10.1,19.3,10.1z" />
-                            </g>
-                        </svg>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/program_prehrane_web.jpg" alt="Program Prehrane Web" class="img-fluid rounded" />
-                    </div>
-                </div>
-                <div class="text-justify">
-                    IG PROG je osnovan sa primarnim ciljem razovja softvera za nutricioniste <a href="https://www.programprehrane.com" title="Program Prehrane">Program Prehrane</a>.
-                    Od prve verzije računalnog programa iz 2008 g, razvijenog u Visual Basic 4, pa do danas, program se razvio u modernu web aplikaciju sa preko 400 zadovoljnih korisnika iz Hrvatske i zemalja regije.
-                    Program Prehrane je dobitnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija. Više o programu pogledajte <a href="https://www.programprehrane.com" title="Program Prehrane">ovdje...</a><br />
-                    Tijekom proteklih godina IG PROG je razvio i druga programska rješenja za komercijalnu primjenu kao što su, aplikaciju za praćenje rada teretane,
-                    aplikaciju za vođenje energetskih pregleda i evidenciju energetskih certifikata, aplikaciju za evidenciju članova i treninga u sportskim klubovima i aplikacija za vođenje kase uzajamne pomoći.
-                </div>
-            </div>
         </div>
-        <div id="section5" class="footer">
-            <div class="container-fluid section slideanim tranparent text-white p-5">
+        <div id="kontakt" class="footer">
+            <div class="container-fluid section slideanim transparent text-white p-5">
                 <div class="m10">
                     Ako i Vama treba brzo i kvalitetno programsko rješenje obratite nam se s povjerenjem.
                 </div>
