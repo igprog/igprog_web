@@ -417,9 +417,28 @@ img {
     left: 16px;
 }
 
-    .bottom-left:hover {
-        display: block;
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-    }
+.bottom-left:hover {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+.hilight:hover {
+    background-color: rgba(0,0,0,0.35);
+    z-index: 1;
+    transition: .6s;
+}
+
+.hilight:hover .bottom-left {
+    display: block;
+}
+
+.stretch {
+    position: absolute;
+    bottom: 0px;
+    top:0px;
+    left:0;
+    right:0;
+}
