@@ -329,7 +329,7 @@ header {
         }
 
         .zoom:hover img {
-            opacity: .3;
+            /*opacity: .3;*/
         }
 
 img {
@@ -426,7 +426,8 @@ img {
 
 
 .hilight:hover {
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0,0,0,0.25);
+    background-color: none;
     z-index: 1;
     transition: .6s;
 }
@@ -436,9 +437,16 @@ img {
 }
 
 .stretch {
+    background-color: rgba(0,0,0,0.45);
     position: absolute;
     bottom: 0px;
     top:0px;
     left:0;
     right:0;
+}
+
+.card-text {
+    text-shadow: .5px .5px #000;
+    color: #fff;
+    font-weight: 800 !important;
 }
