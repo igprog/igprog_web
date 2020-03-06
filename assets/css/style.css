@@ -113,9 +113,9 @@ h4 {
     font-family: Montserrat, sans-serif;
 }
 
-    .navbar li a, .navbar .navbar-brand {
-        color: black !important;
-    }
+.navbar li a, .navbar .navbar-brand {
+    color: black !important;
+}
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
@@ -216,47 +216,47 @@ footer .glyphicon {
     text-align: right;
 }
 
-    .ribbon span {
-        font-size: 12px;
-        font-weight: bold;
-        color: #FFF;
-        text-align: center;
-        line-height: 22px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        width: 100px;
-        display: block;
-        background: #79A70A;
-        background: linear-gradient(#F70505 0%, #8F0808 100%);
-        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-        position: absolute;
-        top: 19px;
-        left: -21px;
-    }
+.ribbon span {
+font-size: 12px;
+font-weight: bold;
+color: #FFF;
+text-align: center;
+line-height: 22px;
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+width: 100px;
+display: block;
+background: #79A70A;
+background: linear-gradient(#F70505 0%, #8F0808 100%);
+box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+position: absolute;
+top: 19px;
+left: -21px;
+}
 
-        .ribbon span::before {
-            content: "";
-            position: absolute;
-            left: 0px;
-            top: 100%;
-            z-index: -1;
-            border-left: 3px solid #8F0808;
-            border-right: 3px solid transparent;
-            border-bottom: 3px solid transparent;
-            border-top: 3px solid #8F0808;
-        }
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #8F0808;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
 
-        .ribbon span::after {
-            content: "";
-            position: absolute;
-            right: 0px;
-            top: 100%;
-            z-index: -1;
-            border-left: 3px solid transparent;
-            border-right: 3px solid #8F0808;
-            border-bottom: 3px solid transparent;
-            border-top: 3px solid #8F0808;
-        }
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #8F0808;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
 
 .hr-bold {
     border-top: 2px solid #1fe27e;
@@ -318,19 +318,19 @@ header {
     transition: transform .6s;
 }
 
-    .zoom:hover {
-        -ms-transform: scale(1.1); /* IE 9 */
-        -webkit-transform: scale(1.1); /* Safari 3-8 */
-        transform: scale(1.1);
-    }
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
 
-        .zoom:hover .bottom-left {
-            display: block;
-        }
+.zoom:hover .card-content {
+    display: block;
+}
 
-        .zoom:hover img {
-            /*opacity: .3;*/
-        }
+.zoom:hover img {
+    /*opacity: .3;*/
+}
 
 img {
     transition: .5s ease;
@@ -410,34 +410,29 @@ img {
 }
 /********** Sidebar **********/
 
-.bottom-left {
+.card-content {
     display: none;
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+	left: 0;
+	right: 0;
+	top: 40%;
+	margin-left: auto;
+ 	margin-right: auto;
 }
-
-.bottom-left:hover {
-    display: block;
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
 
 .hilight:hover {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0,0,0,0.55);
     background-color: none;
     z-index: 1;
     transition: .6s;
 }
 
-.hilight:hover .bottom-left {
+.hilight:hover .card-content {
     display: block;
 }
 
 .stretch {
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0,0,0,0.05);
     position: absolute;
     bottom: 0px;
     top:0px;
@@ -446,7 +441,6 @@ img {
 }
 
 .card-text {
-    text-shadow: .5px .5px #000;
     color: #fff;
     font-weight: 800 !important;
 }
