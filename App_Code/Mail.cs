@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Configuration;
 using System.Text;
+using Newtonsoft.Json;
 
 /// <summary>
 /// SendMail
@@ -25,6 +26,42 @@ public class Mail : System.Web.Services.WebService {
     public Mail() {
     }
 
+    public class NewMail {
+        public string name;
+        public string email;
+        public string msg;
+        public string subject;
+        public string resp;
+    }
+
+    [WebMethod]
+    public string Init() {
+        NewMail x = new NewMail();
+        x.name = null;
+        x.email = null;
+        x.msg = null;
+        x.subject = null;
+        x.resp = null;
+        return JsonConvert.SerializeObject(x, Formatting.None);
+    }
+
+    [WebMethod]
+    public string Send(NewMail x) {
+       string messageBody = string.Format(
+@"
+<hr>Novi upit</h3>
+<p>Ime: {0}</p>
+<p>Email: {1}</p>
+<p>Poruka: {2}</p>", x.name, x.email, x.msg);
+        x.resp = SendMail(sendTo, x.subject, messageBody);
+        return JsonConvert.SerializeObject(x, Formatting.None);
+    }
+
+    [WebMethod]
+    public string Test() {
+        return JsonConvert.SerializeObject("Test OK", Formatting.None);
+    }
+
     public string SendMail(string sendTo, string messageSubject, string messageBody) {
         try {
             MailMessage mailMessage = new MailMessage();
@@ -40,21 +77,12 @@ public class Mail : System.Web.Services.WebService {
             mailMessage.Body = messageBody;
             mailMessage.IsBodyHtml = true;
             Smtp_Server.Send(mailMessage);
-            return "sent";
+            return "OK";
         } catch (Exception e) {
             return e.Message;
         }
     }
 
-    [WebMethod]
-    public string Send(string name, string email, string messageSubject, string message) {
-       string messageBody = string.Format(
-@"
-<hr>Novi upit</h3>
-<p>Ime: {0}</p>
-<p>Email: {1}</p>
-<p>Poruka: {2}</p>", name, email, message);
-        return SendMail(sendTo, messageSubject, messageBody);
-    }
+    
 
 }

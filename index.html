@@ -67,7 +67,7 @@
                 <p class="lead">Pretvorite svoju ideju u Web, Desktop ili Android aplikaciju</p>
             </div>
             <div style="font-size:26px; padding-bottom:80px">
-                <a href="#section5" class="btn btn-primary text-uppercase m-2" style="width:280px; background-color:#0186ff" title="pošaljite upit"><i class="fa fa-check fa-2x"></i> Pošaljite upit</a>
+                <a href="#kontakt" class="btn btn-primary text-uppercase m-2" style="width:280px; background-color:#0186ff" title="pošaljite upit"><i class="fa fa-check fa-2x"></i> Pošaljite upit</a>
                 <a href="tel:{{config.phone}}" class="btn btn-light m-2" style="width:280px; color:#0186ff" title="telefon" ng-cloak><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>
             </div>
         </header>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="text-justify">
                     IG PROG je osnovan 2012 g sa primarnim ciljem razvoja softvera za nutricioniste <a href="https://www.programprehrane.com" title="Program Prehrane">Program Prehrane</a>.
-                    Od prve verzije računalnog programa iz 2008 g, razvijenog u Visual Basic 4, pa do danas, program se razvio u modernu web aplikaciju sa preko 400 zadovoljnih korisnika iz Hrvatske i zemalja regije.
+                    Od prve verzije iz 2008 g objavljeno je sedam verzija programa i do danas Program Prehrane se razvio u modernu web aplikaciju sa preko 600 zadovoljnih korisnika iz Hrvatske i zemalja regije.
                     Program Prehrane je dobitnik više priznanja i zlatnih medalji na domaćim i međunarodnim sajmovima inovacija. Više o programu pogledajte <a href="https://www.programprehrane.com" title="Program Prehrane">ovdje...</a><br />
                     Tijekom proteklih godina IG PROG je razvio i druga programska rješenja za komercijalnu primjenu kao što su, aplikaciju za praćenje rada teretane,
                     aplikaciju za vođenje energetskih pregleda i evidenciju energetskih certifikata, aplikaciju za evidenciju članova i treninga u sportskim klubovima i aplikacija za vođenje kase uzajamne pomoći.
@@ -335,7 +335,7 @@
                     </div>
 
                 </div>
-                <p class="text-left">* <em>Članovi <a href="https://obrtnici-rijeka.hr" title="Udruženje obrtnika Rijeka" >udruženja obrtnika Rijeka</a> imaju pravo na dodatni <a href="https://obrtnici-rijeka.hr/2020/02/ig-prog-novi-partner-u-zajednickoj-nabavi" title="IG PROG – partner u Zajedničkoj nabavi">popust</a> u iznosu od 25%</em>.</p>
+                <p class="text-left">* <em>Članovi <a href="https://obrtnici-rijeka.hr" title="Udruženje obrtnika Rijeka" >udruženja obrtnika Rijeka</a> putem projekta <a href="http://obrtnici-rijeka.hr/udruzenje/projekti/zajednicka-nabava/partneri-projekta-zajednicka-nabava/" title="Zajednička nabava">Zajednička nabava</a> imaju pravo na dodatni <a href="https://obrtnici-rijeka.hr/2020/02/ig-prog-novi-partner-u-zajednickoj-nabavi" title="IG PROG – partner u Zajedničkoj nabavi">popust</a> u iznosu od 25%</em>.</p>
             </div>
 
         </div>
@@ -370,7 +370,7 @@
                                         <input ng-model="d.email" class="form-control" name="email" placeholder="Email" type="email" required>
                                     </div>
                                 </div>
-                                <textarea ng-model="d.message" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
+                                <textarea ng-model="d.msg" class="form-control" name="comments" placeholder="Poruka" rows="5"></textarea><br>
                                 <div class="row">
                                     <div class="col-sm-12 form-group">
                                         <button class="btn btn-outline-light pull-right" ng-disabled="isSendButtonDisabled" ng-click="send(d)"><span ng-class="sendicon"></span> {{sendicontitle}}</button>
