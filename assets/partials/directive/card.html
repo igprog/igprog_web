@@ -1,4 +1,18 @@
-﻿<div class="card card-explore zoom h-100">
+﻿<div class="flip-box">
+    <div class="flip-box-inner">
+        <div class="flip-box-front">
+            <img src="{{img}}" class="img-fluid flip-box-img" alt="{{product}}">
+        </div>
+        <div class="flip-box-back pt-5">
+            <h3 ng-if="product" class="small font-weight-bold"> {{product}}</h3>
+            <p ng-if="shortdesc" class="small">{{shortdesc}}</p>
+            <a ng-if="link" href="{{link}}" class="small" title="{{domain}}">{{domain}} <i class="ti-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="card card-explore zoom h-100">
     <div class="card-explore__img">
         <img class="card-img" src="{{img}}" alt="{{product}}">
     </div>
@@ -7,7 +21,7 @@
         <p ng-if="shortdesc" class="small">{{shortdesc}}</p>
         <a ng-if="link" href="{{link}}" class="small" title="{{domain}}">{{domain}} <i class="ti-arrow-right"></i></a>
     </div>
-</div>
+</div>-->
 
 
 <!--OLD-->
