@@ -73,6 +73,7 @@ angular.module('app', [])
         restrict: 'E',
         scope: {
             link: '=',
+            domain: '=',
             product: '=',
             shortdesc: '=',
             img: '='

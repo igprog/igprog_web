@@ -1,4 +1,17 @@
-﻿<div class="card shadow zoom bg-light" >
+﻿<div class="card card-explore zoom h-100">
+    <div class="card-explore__img">
+        <img class="card-img" src="{{img}}" alt="{{product}}">
+    </div>
+    <div class="card-body">
+        <h3 ng-if="product" class="small font-weight-bold" > {{product}}</h3>
+        <p ng-if="shortdesc" class="small">{{shortdesc}}</p>
+        <a ng-if="link" href="{{link}}" class="small" title="{{domain}}">{{domain}} <i class="ti-arrow-right"></i></a>
+    </div>
+</div>
+
+
+<!--OLD-->
+<!--<div class="card shadow zoom bg-light" >
     <a href="{{link}}" title="{{product}}">
         <img class="card-img-top" src="{{img}}" alt="{{product}}">
         <div class="stretch hilight">
@@ -8,5 +21,5 @@
             </div>
         </div>
     </a>
-</div>
+</div>-->
 
