@@ -47,7 +47,7 @@
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="nav-item">
+                <li ng-if="config.showprices" class="nav-item">
                     <a class="nav-link font-weight-bold" href="#cijene">Cijene</a>
                 </li>
                 <li class="nav-item">
@@ -68,7 +68,7 @@
             </div>
             <div style="font-size:26px; padding-bottom:80px">
                 <a href="#kontakt" class="btn btn-primary text-uppercase m-2" style="width:280px; background-color:#0186ff" title="pošaljite upit"><i class="fa fa-check fa-2x"></i> Pošaljite upit</a>
-                <a href="tel:{{config.phone}}" class="btn btn-light m-2" style="width:280px; color:#0186ff" title="telefon" ng-cloak><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>
+                <!--<a href="tel:{{config.phone}}" class="btn btn-light m-2" style="width:280px; color:#0186ff" title="telefon" ng-cloak><i class="fa fa-phone fa-2x"></i> {{config.phone}}</a>-->
             </div>
         </header>
         <div class="p-3">
@@ -207,7 +207,7 @@
                 </div>
             </div>
 
-            <div id="cijene" class="container section slideanim">
+            <div ng-if="config.showprices" id="cijene" class="container section slideanim">
                 <h2 class="text-center">Cijene</h2>
                 <hr />
                 <div class="row">
@@ -421,8 +421,8 @@
                             <label>{{config.company}}</label>
                             <p>OIB {{config.oib}}</p>
                             <p><i class="fa fa-home"></i> {{config.address}}</p>
-                            <p><a href="tel:+385 98 330 966" class="text-white"><i class="fa fa-phone"></i> {{config.phone}}</a></p>
-                            <p><a href="mailto:{{config.email}}" class="text-white"><i class="far fa-envelope"></i> {{config.email}}</a></p>
+                            <!--<p><a href="tel:+385 98 330 966" class="text-white"><i class="fa fa-phone"></i> {{config.phone}}</a></p>-->
+                            <p><span class="text-white"><i class="far fa-envelope"></i> {{config.email}}</span></p>
                             <p><a href="{{config.url}}" class="text-white"><i class="fa fa-globe"></i> {{config.sitename}}</a></p>
                         </div>
                         <div class="col-lg-7 pt-3">
